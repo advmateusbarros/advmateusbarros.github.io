@@ -1,284 +1,271 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="src/js/head.js"></script>
-        <title>Souza Barros Araújo Advogados Associados</title>
-        
-        <!-- CONFIG BOTÃO DO WHATSAPP -->
-        <style>  
-          .joinchat__button {
-            position: fixed; /* Fixa o botão na tela mesmo ao rolar a página */
-            bottom: 30px; /* Distância de 30px da parte inferior da tela */
-            right: 30px; /* Distância de 30px da lateral direita da tela */
-            background-color: #25d366; /* Cor de fundo (verde WhatsApp) */
-            color: white; /* Cor do ícone/texto dentro do botão */
-            border-radius: 50%; /* Deixa o botão com formato circular */
-            width: 60px; /* Largura do botão */
-            height: 60px; /* Altura do botão */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor do botão */
-            z-index: 9999; /* Garante que o botão fique acima dos outros elementos */
-            cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
-            display: flex; /* Usa flexbox para centralizar conteúdo */
-            justify-content: center; /* Centraliza horizontalmente o conteúdo */
-            align-items: center; /* Centraliza verticalmente o conteúdo */
-            animation: pulse 2s infinite; /* Aplica a animação de pulsar continuamente */}
-                 
-          .joinchat__button__sendtext {
-            display: none;}
-      
-          .joinchat__button:hover .joinchat__tooltip { /*Quando passa o mouse, mostra a tooltip (balãozinho lateral) subindo um pouco.*/
-            opacity: 1;
-            transform: translateY(-10px);}
-      
-          .joinchat__tooltip { 
-            position: absolute;
-            right: 70px; /*Posiciona a tooltip 70px à esquerda do botão*/
-            background-color: #202c33;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            opacity: 0;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            font-size: 14px;}
-      
-          @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }} 
+<html lang="pt-BR" class="scroll-smooth">
 
-          .joinchat__icon-inner { /* Cria um círculo interno verde com borda branca em volta do ícone.*/
-            background-color: #25d366;
-            border: 2px solid white;  /* Aqui é a borda branca interna */
-            border-radius: 50%;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;}
-
-           .joinchat__icon-inner img { /*Define o tamanho do ícone do WhatsApp dentro do botão.*/
-            width: 30px;
-            height: 30px;}        
-
-        </style>
-
-        <!-- ANIMAÇÃO DAS FRASES -->
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-        <!-- A animação só começar no scroll da tela -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-        <!-- Pequeno CSS para a animação da parte final (sba advogados) -->
-
-        <!-- Pequeno CSS para a animação fade-in -->
-        <style>
-            @keyframes fadeInUp {
-              0% {
-                opacity: 0;
-                transform: translateY(20px);
-              }
-              100% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-            .animate-fade-in-up {
-              animation: fadeInUp 1s ease-out forwards;
-            }
-            </style>
-
-
-
-
-      </head>
-      
-    
-
-
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+    <!-- SEO -->
+    <meta name="description" content="Souza Barros Araújo Advogados Associados: excelência jurídica, estratégia e resultados em todo o Brasil. Consultoria empresarial, compliance, contencioso e mais." />
+    <meta name="author" content="Souza Barros Araújo Advogados Associados" />
+    <meta name="theme-color" content="#1a202c" />
+  
+    <!-- Título -->
+    <title>Souza Barros Araújo Advogados Associados</title>
+  
+    <!-- Favicon -->
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+    <!-- AOS: Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+    <!-- Tailwind + Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  
+    <!-- Custom JS -->
+    <script src="src/js/head.js" defer></script>
+  
+    <!-- Estilo personalizado no final para evitar conflitos -->
+    <style>
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+  
+      .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+      }
+  
+      /* Estilo botão WhatsApp isolado */
+      .joinchat__button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: pulse 2s infinite;
+      }
+  
+      .joinchat__icon-inner {
+        background-color: #25d366;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .joinchat__icon-inner img {
+        width: 30px;
+        height: 30px;
+      }
+  
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+  
+      .joinchat__tooltip {
+        position: absolute;
+        right: 70px;
+        background-color: #202c33;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        font-size: 14px;
+      }
+  
+      .joinchat__button:hover .joinchat__tooltip {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+    </style>
+</head>      
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="sticky top-0 z-50 bg-white dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-600">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="src/images/logo/logo_dourada_sem_fundo.png" class="block dark:hidden w-48 h-auto" alt="Souza Barros Logo">
-                <img src="src/images/logo/logo_dourada_sem_fundo.png" class="hidden dark:block w-48 h-auto" alt="Souza Barros Logo">
-
-                            
+        
+    <!-- NAVBAR REESTILIZADA PREMIUM -->
+    <!-- NAVBAR PREMIUM REFINADA -->
+    <nav class="sticky top-0 z-50 w-full bg-white border-b border-yellow-500 shadow-md transition-all duration-300">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
+    
+        <!-- LOGO -->
+        <a href="#home" class="flex items-center space-x-3">
+            <img src="src/images/logo/logo_dourada_sem_fundo.png" alt="Logo SBA" class="w-48 h-auto">
+        </a>
+    
+        <!-- BOTÕES SUPERIORES -->
+        <div class="flex md:order-2 items-center space-x-2">
+            <!-- CONTATAR -->
+            <a href="#contato" class="px-5 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white font-medium transition duration-300 text-sm shadow">
+            Contatar
             </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Contatar
-                </button>
-                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                </button>
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="#home" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Início
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Sobre
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#services" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Serviços
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#team" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Nossa equipe
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#prices" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Planos
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    
+            <!-- BOTÃO DARK MODE -->
+            <button id="theme-toggle" type="button" class="p-2.5 rounded-full border border-gray-300 text-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zM4 10a6 6 0 1112 0A6 6 0 014 10z"></path></svg>
+            </button>
+    
+            <!-- MENU MOBILE -->
+            <button data-collapse-toggle="navbar-main" type="button" class="md:hidden p-2 text-black rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-100 transition" aria-controls="navbar-main" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            </button>
+        </div>
+    
+        <!-- LINKS DO MENU -->
+        <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-main">
+            <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-sm font-medium">
+            <li>
+                <a href="#home" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Início</a>
+            </li>
+            <li>
+                <a href="#about" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Sobre</a>
+            </li>
+            <li>
+                <a href="#services" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Serviços</a>
+            </li>
+            <li>
+                <a href="#team" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Nossa Equipe</a>
+            </li>
+            <li>
+                <a href="#prices" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Planos</a>
+            </li>
+            </ul>
+        </div>
         </div>
     </nav>
+    
+    <!-- HOME ULTRA EXECUTIVO -->
+    <section id="home" class="relative bg-gradient-to-b from-gray-50 via-white to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div class="py-12 px-6 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
 
- <!-- HOME ULTRA EXECUTIVO -->
-<section id="home" class="relative bg-gradient-to-b from-gray-50 via-white to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-    <div class="py-12 px-6 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
+            <!-- Badge de Consultoria Premium -->
+            <a href="#" class="inline-flex justify-between items-center py-2 px-6 mb-8 text-sm font-medium text-gray-700 border border-yellow-500 bg-white rounded-full shadow-md hover:bg-yellow-500 hover:text-white transition-all dark:bg-gray-800 dark:border-yellow-400 dark:text-white dark:hover:bg-yellow-500">
+                <i class="fa-regular fa-lightbulb mr-2"></i> Consultoria Jurídica Especializada
+            </a>
 
-        <!-- Badge de Consultoria Premium -->
-        <a href="#" class="inline-flex justify-between items-center py-2 px-6 mb-8 text-sm font-medium text-gray-700 border border-yellow-500 bg-white rounded-full shadow-md hover:bg-yellow-500 hover:text-white transition-all dark:bg-gray-800 dark:border-yellow-400 dark:text-white dark:hover:bg-yellow-500">
-            <i class="fa-regular fa-lightbulb mr-2"></i> Consultoria Jurídica Especializada
-        </a>
+            <!-- Bloco de Conteúdo Centralizado -->
+            <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl inline-block">
 
-        <!-- Bloco de Conteúdo Centralizado -->
-        <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl inline-block">
+                <!-- Título Principal -->
+                <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    Assessoria Jurídica <br> Para Empresas
+                </h1>
+                
 
-            <!-- Título Principal -->
-            <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                Assessoria Jurídica <br> Para Empresas
-            </h1>
-            
+                <!-- Subtítulo Elegante -->
+                <p class="mb-10 text-lg md:text-xl font-light text-gray-600 lg:px-32 dark:text-gray-300">
+                    Defendemos seus direitos com excelência, ética e compromisso, atuando como parceiros estratégicos para o crescimento da sua empresa.
+                </p>
 
-            <!-- Subtítulo Elegante -->
-            <p class="mb-10 text-lg md:text-xl font-light text-gray-600 lg:px-32 dark:text-gray-300">
-                Defendemos seus direitos com excelência, ética e compromisso, atuando como parceiros estratégicos para o crescimento da sua empresa.
-            </p>
+                <!-- Botão Premium -->
+                <div class="flex flex-col mb-10 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                    <a href="#contato" class="inline-flex justify-center items-center py-4 px-8 text-base font-medium text-gray-900 bg-white border border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                        Conhecer
+                        <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
 
-            <!-- Botão Premium -->
-            <div class="flex flex-col mb-10 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                <a href="#contato" class="inline-flex justify-center items-center py-4 px-8 text-base font-medium text-gray-900 bg-white border border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white transition-all duration-300">
-                    Conhecer
-                    <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                </a>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- SOBRE: COLUNA DO TEXTO E IMAGEM -->
+    <section id="about" class="bg-white dark:bg-gray-900 py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
     
+        
+        <div class="font-light text-gray-700 sm:text-lg dark:text-gray-400 text-justify pb-24">
+
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white text-center">
+                Souza Barros Araújo Advogados Associados
+            </h2>  
+
+            <p class="text-xl text-gray-700 mb-10 font-medium">
+            <strong>Excelência Jurídica com Estratégia, Agilidade e Resultado</strong>
+            </p>
     
+            <p class="text-lg text-gray-600 mb-6">
+            O <strong>Souza Barros Araújo Advogados Associados</strong> é mais do que um escritório full service — somos aliados estratégicos na defesa e promoção dos interesses de nossos clientes, sejam pessoas físicas ou jurídicas, com atuação local e nacional. Nosso compromisso é oferecer soluções jurídicas sofisticadas, personalizadas e alinhadas aos objetivos específicos de cada demanda.
+            </p>
+    
+            <p class="text-lg text-gray-600 mb-6">
+            Com excelência técnica, visão analítica e abordagem multidisciplinar, entregamos assessoria jurídica de alto padrão, fundamentada na ética, na eficiência e na inteligência estratégica.
+            </p>
+    
+            <p class="text-lg text-gray-600 mb-6">
+            Nossa atuação é marcada por:
+            </p>
+    
+            <ul class="list-disc list-inside text-gray-600 mb-6 pl-4 space-y-2">
+            <li><strong>Rigor metodológico e precisão técnica</strong></li>
+            <li><strong>Proatividade na gestão de riscos e conflitos</strong></li>
+            <li><strong>Foco em soluções inovadoras, juridicamente seguras e orientadas por resultados mensuráveis</strong></li>
+            </ul>
+    
+            <p class="text-lg text-gray-600 mb-6">
+            Contamos com uma equipe altamente especializada, com sólida formação acadêmica e ampla experiência prática, apta a atuar com agilidade e assertividade nas seguintes áreas:
+            </p>
+    
+            <ul class="list-disc list-inside text-gray-600 mb-6 pl-4 space-y-1">
+            <li>Direito Cível e Empresarial</li>
+            <li>Direito do Trabalho e Sindical</li>
+            <li>Direito Tributário e Fiscal</li>
+            <li>Direito Administrativo e Licitações</li>
+            <li>Direito Digital e Proteção de Dados (LGPD)</li>
+            <li>Arbitragem, Mediação e Métodos Consensuais de Solução de Conflitos</li>
+            </ul>
+    
+            <p class="text-lg text-gray-600">
+            Cada caso é conduzido com extrema diligência, confidencialidade e comprometimento, visando não apenas a resolução eficaz de litígios, mas a <strong>criação de valor jurídico real</strong>, por meio de estratégias que antecipam riscos, reduzem contingências e potencializam oportunidades.
+            </p>
+    
+            <!-- Espaço garantido -->
+            <div class="h-12"></div>
 
-</body>
-</html>
-
-
-<section id="about" class="bg-white dark:bg-gray-900">
-    <div class="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-24 lg:px-6">
-      
-      <!-- TEXTO DO TÓPICO "SOBRE" -->
-
-      <div class="font-light text-gray-700 sm:text-lg dark:text-gray-400">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          <span class="text-
-            </span>
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                
-            </h2>
-            <section class="bg-white text-gray-800 py-16 px-6 md:px-20">
-                <div class="max-w-6xl mx-auto">
-                    <!-- Início do Título Principal -->
-                  <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                    Souza Barros Araújo Advogados Associados
-                  </h2>
-                   <!-- Fim do Título Principal -->
-                  <p class="text-xl text-gray-700 mb-10 font-medium">
-                    <strong>Excelência Jurídica com Estratégia, Agilidade e Resultado</strong>
-                  </p>
-              
-                  <p class="text-lg text-gray-600 mb-6">
-                    O <strong>Souza Barros Araújo Advogados Associados</strong> é mais do que um escritório full service — somos aliados estratégicos na defesa e promoção dos interesses de nossos clientes, sejam pessoas físicas ou jurídicas, com atuação local e nacional. Nosso compromisso é oferecer soluções jurídicas sofisticadas, personalizadas e alinhadas aos objetivos específicos de cada demanda.
-                  </p>
-              
-                  <p class="text-lg text-gray-600 mb-6">
-                    Com excelência técnica, visão analítica e abordagem multidisciplinar, entregamos assessoria jurídica de alto padrão, fundamentada na ética, na eficiência e na inteligência estratégica.
-                  </p>
-              
-                  <p class="text-lg text-gray-600 mb-6">
-                    Nossa atuação é marcada por:
-                  </p>
-                  <ul class="list-disc list-inside text-gray-600 mb-6 pl-4 space-y-2">
-                    <li><strong>Rigor metodológico e precisão técnica</strong></li>
-                    <li><strong>Proatividade na gestão de riscos e conflitos</strong></li>
-                    <li><strong>Foco em soluções inovadoras, juridicamente seguras e orientadas por resultados mensuráveis</strong></li>
-                  </ul>
-              
-                  <p class="text-lg text-gray-600 mb-6">
-                    Contamos com uma equipe altamente especializada, com sólida formação acadêmica e ampla experiência prática, apta a atuar com agilidade e assertividade nas seguintes áreas:
-                  </p>
-              
-                  <ul class="list-disc list-inside text-gray-600 mb-6 pl-4 space-y-1">
-                    <li>Direito Cível e Empresarial</li>
-                    <li>Direito do Trabalho e Sindical</li>
-                    <li>Direito Tributário e Fiscal</li>
-                    <li>Direito Administrativo e Licitações</li>
-                    <li>Direito Digital e Proteção de Dados (LGPD)</li>
-                    <li>Arbitragem, Mediação e Métodos Consensuais de Solução de Conflitos</li>
-                  </ul>
-              
-                  <p class="text-lg text-gray-600 mb-6">
-                    Cada caso é conduzido com extrema diligência, confidencialidade e comprometimento, visando não apenas a resolução eficaz de litígios, mas a <strong>criação de valor jurídico real</strong>, por meio de estratégias que antecipam riscos, reduzem contingências e potencializam oportunidades.
-                  </p>
-              
-                  <p class="text-xl text-gray-800 font-semibold mt-8">
-                    <strong>Souza Barros Araújo Advogados Associados.</strong><br />
-                    <span class="text-indigo-600">Excelência, estratégia e resultado. Essa é a nossa assinatura.</span>
-                  </p>
-
-                
-</section>
-                          </p>
+            <p class="text-xl text-gray-800 font-semibold text-center">
+            <strong>Souza Barros Araújo Advogados Associados.</strong><br />
+            <span class="text-indigo-600">Excelência, estratégia e resultado. Essa é a nossa assinatura.</span>
             </p>
         </div>
-        <div class="space-y-4 lg:space-y-10">
+    
+        <!-- COLUNA DAS IMAGENS -->
+        <div class="space-y-4 lg:space-y-10 self-start">
             <img class="w-auto max-w-full max-h-64 rounded-lg" src="src/images/about/socios_juntos.png" alt="imagem do escritório de advocacia 1">
             <img class="w-full h-64 object-cover rounded-lg" src="src/images/about/logo_com_fundo.jpg" alt="imagem da equipe jurídica">
         </div>
-          
-    </div>
-</section>
-
-     <!-- SERVICES -->
-     <section id="services" class="bg-gray-100">
+    
+        </div>
+    </section>
+  
+    <!-- SERVIÇOS -->
+    <section id="services" class="bg-gray-100">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" data-aos="fade-up">
             
           <div class="max-w-screen-md mb-8 lg:mb-16" data-aos="fade-up" data-aos-delay="100">
@@ -384,8 +371,7 @@
         </div>
     </section>
 
-
-    <!-- TEAM -->
+    <!-- NOSSA EQUIPE -->
     <section id="team" class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
             <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
@@ -552,51 +538,44 @@
      </div>
     </section>
 
-      <!-- CONTAGEM DE MUNICIPIOS, ESTADOS E CLIENTES  -->
+    <!-- BLOCO DE DE MUNICIPIOS, ESTADOS E CLIENTES -->
+    <section class="bg-white dark:bg-gray-900 py-16">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
 
-      <!-- BLOCO DE CONTADORES COM ESTILO JURÍDICO E NÚMEROS MAIORES -->
-<section class="bg-white dark:bg-gray-900 py-16">
-    <div class="max-w-screen-xl mx-auto px-4 text-center">
-  
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            <!-- MUNICÍPIOS -->
 
-        <!-- MUNICÍPIOS -->
+            <div>
+            <span id="counter-municipios" class="text-7xl font-extrabold text-gray-800 dark:text-white tracking-wide" style="font-family: Georgia, serif;">0</span>
+            <p class="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">Municípios Atendidos</p>
+            </div>
+    
+            <!-- ESTADOS -->
 
-        <div>
-          <span id="counter-municipios" class="text-7xl font-extrabold text-gray-800 dark:text-white tracking-wide" style="font-family: Georgia, serif;">0</span>
-          <p class="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">Municípios Atendidos</p>
+            <div>
+            <span id="counter-estados" class="text-7xl font-extrabold text-gray-800 dark:text-white tracking-wide" style="font-family: Georgia, serif;">0</span>
+            <p class="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">Estados Atendidos</p>
+            </div>
+    
+            <!-- CLIENTES -->
+
+            <div>
+            <span id="counter-clientes" class="text-7xl font-extrabold text-gray-800 dark:text-white tracking-wide" style="font-family: Georgia, serif;">0</span>
+            <p class="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">Clientes Atendidos</p>
+            </div>
         </div>
-  
-        <!-- ESTADOS -->
-
-        <div>
-          <span id="counter-estados" class="text-7xl font-extrabold text-gray-800 dark:text-white tracking-wide" style="font-family: Georgia, serif;">0</span>
-          <p class="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">Estados Atendidos</p>
+    
+        <p class="text-xl text-gray-700 dark:text-gray-300 font-light">
+            Presença estratégica em <strong>PA, MA, BA, PR, RS, SC, SP e RJ</strong>, 
+            com atuação consolidada em <strong>29 municípios</strong> 
+            e mais de <strong> 150 clientes atendidos</strong> em todo o Brasil.
+        </p>
+    
         </div>
+    </section>
   
-        <!-- CLIENTES -->
-
-        <div>
-          <span id="counter-clientes" class="text-7xl font-extrabold text-gray-800 dark:text-white tracking-wide" style="font-family: Georgia, serif;">0</span>
-          <p class="mt-2 text-lg font-medium text-gray-600 dark:text-gray-400">Clientes Atendidos</p>
-        </div>
-      </div>
-  
-      <p class="text-xl text-gray-700 dark:text-gray-300 font-light">
-        Presença estratégica em <strong>PA, MA, BA, PR, RS, SC, SP e RJ</strong>, 
-        com atuação consolidada em <strong>29 municípios</strong> 
-        e mais de <strong> 150 clientes atendidos</strong> em todo o Brasil.
-      </p>
-  
-    </div>
-  </section>
-  
-                  
-
-
-    </div>
-
-
+ 
 <!-- DEPOIMENTOS EM CARROSSEL EXECUTIVO -->
 
 <div style="background: linear-gradient(135deg, #f0f2f5, #ffffff); padding: 60px 20px;">
@@ -629,7 +608,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
   
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -858,4 +837,5 @@
 
 
 </body>
+
 </html>
