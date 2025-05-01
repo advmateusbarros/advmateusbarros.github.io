@@ -43,6 +43,9 @@
         <!-- Tailwind + Flowbite -->
         <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+
     
         <!-- Estilo personalizado no final para evitar conflitos -->
         <style>
@@ -95,8 +98,8 @@
             100% { transform: scale(1); }
         }
     
-        .joinchat__tooltip {
-            position: absolute;
+        .joinchat__tooltip 
+            {position: absolute;
             right: 70px;
             background-color: #202c33;
             color: white;
@@ -105,17 +108,20 @@
             opacity: 0;
             transition: all 0.3s ease;
             white-space: nowrap;
-            font-size: 14px;
-        }
+            font-size: 14px;}
+        
     
-        .joinchat__button:hover .joinchat__tooltip {
-            opacity: 1;
-            transform: translateY(-10px);
-        }
+        .joinchat__button:hover .joinchat__tooltip 
+            {opacity: 1;
+            transform: translateY(-10px);}
+        
             /* Estilo Hover dos Cards dos Serviços */
-            #services .group:hover {
-                background: linear-gradient(135deg, #fef9c3, #fde68a);
-            }
+            #services .group:hover 
+                {background-color: #f9f5ef;
+                border-color: #c49b57;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);}
+        
+
 
             /* Em telas menores que 768px o background-attachment vira scroll.
             Em telas maiores, continua fixed (efeito parallax ativo).*/
@@ -217,190 +223,294 @@
             </div>
         </section>
 
-        <!-- SOBRE: COLUNA DO TEXTO E IMAGEM -->
-        <section id="about" class="bg-white py-24">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <!-- SOBRE/ABOUT: COLUNA DE TEXTO INTRODUTÓRIO E IMAGEM-->
+        <section id="about" class="bg-[#f9f9f9] py-28">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         
-                <!-- TEXTO -->
-                <div class="font-normal text-gray-800 sm:text-lg text-justify pb-2">
-            
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 text-center">
-                    Souza Barros Araújo Advogados Associados
-                    </h2>
-            
-                    <p class="text-2xl text-gray-800 mb-10 font-semibold text-center">
-                    Excelência Jurídica com Estratégia, Agilidade e Resultado
-                    </p>
-            
-                    <p class="text-lg text-gray-800 mb-6">
-                    O <strong>Souza Barros Araújo Advogados Associados</strong> é mais do que um escritório full service — somos aliados estratégicos na defesa e promoção dos interesses de nossos clientes, sejam pessoas físicas ou jurídicas, com atuação local e nacional. Nosso compromisso é oferecer soluções jurídicas sofisticadas, personalizadas e alinhadas aos objetivos específicos de cada demanda.
-                    </p>
-            
-                    <p class="text-lg text-gray-800 mb-6">
-                    Com excelência técnica, visão analítica e abordagem multidisciplinar, entregamos assessoria jurídica de alto padrão, fundamentada na ética, na eficiência e na inteligência estratégica.
-                    </p>
-            
-                    <p class="text-lg text-gray-800 mb-6">Nossa atuação é marcada por:</p>
-            
-                    <ul class="list-disc list-outside text-gray-800 mb-6 pl-6 space-y-2">
-                        <li><strong>Rigor metodológico e precisão técnica</strong></li>
-                        <li><strong>Proatividade na gestão de riscos e conflitos</strong></li>
-                        <li><strong>Foco em soluções inovadoras, juridicamente seguras e orientadas por resultados mensuráveis</strong></li>
-                    </ul>
-            
-                    <p class="text-lg text-gray-800 mb-6">
-                    Contamos com uma equipe altamente especializada, com sólida formação acadêmica e ampla experiência prática, apta a atuar com agilidade e assertividade nas seguintes áreas:
-                    </p>
-            
-                    <ul class="list-disc list-inside text-gray-800 mb-6 pl-4 space-y-1">
-                    <li>Direito Condominial e Imobiliário</li>
-                    <li>Direito Cível e Empresarial</li>
-                    <li>Direito Criminal</li>
-                    <li>Direito do Trabalho e Sindical</li>
-                    <li>Direito Tributário e Fiscal</li>
-                    <li>Direito Administrativo e Licitações</li>
-                    <li>Direito Digital e Proteção de Dados (LGPD)</li>
-                    <li>Direito Ambiental e Agrário</li>
-                    <li>Direito Médico e da Saúde</li>
-                    
-                    </ul>
-            
-                    <p class="text-lg text-gray-800">
-                    Cada caso é conduzido com extrema diligência, confidencialidade e comprometimento, visando não apenas a resolução eficaz de litígios, mas a <strong>criação de valor jurídico real</strong>, por meio de estratégias que antecipam riscos, reduzem contingências e potencializam oportunidades.
-                    </p>
-            
-                    <!-- Espaço garantido -->
-                    <div class="h-12"></div>
-            
-                    <!-- "ASSINATURA FINAL" do Texto -->
-                    <p class="text-2xl text-gray-900 font-bold text-center">
-                    Souza Barros Araújo Advogados Associados
-                    </p>
-                    <p class="text-lg text-gray-700 text-center">
-                    Excelência, estratégia e resultado. Essa é a nossa assinatura.
-                    </p>        
+            <!-- COLUNA DE TEXTO -->
+            <div class="text-gray-800 text-justify" data-aos="fade-right">
+        
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-center text-[#1a1a1a] font-[Playfair Display]">
+                Souza Barros Araújo Advogados Associados
+                </h2>
+        
+                <p class="text-xl text-center text-[#c49b57] font-semibold mb-10 uppercase tracking-wide">
+                Excelência Jurídica com Estratégia e Resultado
+                </p>
+        
+                <p class="text-lg leading-relaxed mb-6">
+                O <strong class="text-[#1a1a1a]">Souza Barros Araújo Advogados Associados</strong> é um escritório de advocacia empresarial de alto padrão, com atuação nacional e abordagem estratégica. Mais do que prestação de serviços jurídicos, entregamos <span class="text-[#c49b57] font-medium">segurança, credibilidade e valor</span> aos nossos clientes.
+                </p>
+        
+                <p class="text-lg leading-relaxed mb-6">
+                Somos referência em soluções jurídicas sofisticadas e personalizadas, com forte embasamento técnico, análise multidisciplinar e atuação ética.
+                </p>
+        
+                <p class="text-lg font-medium mb-4 text-[#1a1a1a]">Diferenciais que nos definem:</p>
+                <ul class="text-lg list-disc pl-6 mb-6 space-y-2">
+                <li><span class="font-semibold">Rigor técnico e metodológico</span></li>
+                <li><span class="font-semibold">Gestão proativa de riscos e crises</span></li>
+                <li><span class="font-semibold">Soluções jurídicas inovadoras e orientadas por resultado</span></li>
+                </ul>
+        
+                <p class="text-lg leading-relaxed mb-6">
+                Nossos sócios e associados atuam com excelência nas seguintes áreas:
+                </p>
+        
+                <ul class="text-lg list-inside list-disc space-y-1 mb-6">
+                <li>Direito Condominial e Imobiliário</li>
+                <li>Direito Empresarial e Cível</li>
+                <li>Direito Criminal </li>
+                <li>Direito Trabalhista</li>
+                <li>Direito Tributário e Planejamento Fiscal</li>
+                <li>Direito Previdenciário</li>
+                <li>Licitações, Contratos Públicos e Administrativo</li>
+                <li>LGPD e Direito Digital</li>
+                <li>Direito Ambiental e Agrário</li>
+                <li>Direito Médico e da Saúde</li>
+                </ul>
+        
+                <p class="text-lg leading-relaxed text-gray-700 mb-10">
+                Cada caso é conduzido com máxima diligência, discrição e visão estratégica — buscando não apenas litígios eficazes, mas <strong class="text-[#c49b57]">valor jurídico real</strong> e soluções que transformam o cenário do cliente.
+                </p>
+        
+                <!-- Assinatura final -->
+                <div class="text-center mt-12">
+                <p class="text-2xl font-bold text-[#1a1a1a]">Souza Barros Araújo Advogados</p>
+                <p class="text-base text-gray-600 italic">Excelência, estratégia e resultado. Essa é a nossa assinatura.</p>
                 </div>
-                        
-                <!-- COLUNA DAS IMAGENS -->
-                <div class="space-y-6 lg:space-y-10 self-start w-full">
-
-                    <!-- IMAGEM 1 -->
-                    <img 
-                    class="w-full h-100 object-cover rounded-2xl shadow-md"
-                    src="src/images/about/socios_juntos.png"
-                    alt="Imagem do escritório de advocacia com sócios" 
-                     />
-                                
-                    <!-- IMAGEM 2 -->
-<img 
-  class="w-full h-80 object-contain md:object-cover rounded-2xl shadow-md"
-  src="src/images/about/logo_com_fundo.jpg"
-  alt="Imagem da equipe jurídica" 
-/>
-
-                </div>                  
+            </div>
+        
+            <!-- COLUNA DAS IMAGENS -->
+            <div class="space-y-10" data-aos="fade-left">
+                <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
+                <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.png" alt="Sócios do Escritório">
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
+                <img class="w-full h-80 object-contain md:object-cover hover:scale-105 transition-transform duration-700" src="src/images/logo/logo_fundo_preto.jpg" alt="Logo do Escritório">
+                </div>
+            </div>
+        
             </div>
         </section>
-        
-        <!-- SERVIÇOS -->
-        <section id="services" class="bg-gray-100">
-            <div class="py-12 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" data-aos="fade-up">
-        
-                <!-- TÍTULO E INTRO -->
-                <div class="max-w-screen-md mb-8 lg:mb-16" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-                    Soluções Jurídicas Estratégicas para o Sucesso Empresarial
-                    </h2>
-                    <p class="text-gray-600 sm:text-xl text-justify">
-                    No Escritório Souza Barros Araújo Advogados Associados oferecemos uma assessoria integral, 
-                    combinando expertise multidisciplinar e visão estratégica para proteger seu negócio e impulsionar seu crescimento. 
-                    Atuamos em Direito Empresarial, Trabalhista, Tributário, Digital e muito mais, 
-                    entregando soluções sob medida que antecipam riscos, asseguram compliance e garantem resultados concretos
-                    </p>
-                </div>
-        
-                <!-- GRID DE SERVIÇOS -->
-                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- A Essência do SBA-->
+        <section class="bg-white py-24">
+            <div class="max-w-6xl mx-auto px-6">
+          
+              <!-- TÍTULO COM DESTAQUE DA SESSÃO -->
+              <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-16 font-[Playfair Display] leading-snug">
+                A Essência que Faz do 
+                <span class="text-[#c49b57] font-bold drop-shadow-sm">Souza Barros Araújo Advogados Associados</span> 
+                um Escritório de Referência
+              </h2>
+          
+              <!-- BLOCO DOS 3 CARD DE DIFERENCIAL DO ESCRITÓRIO -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             
-                    <!-- SERVIÇO 1 -->
-                    <div class="group p-6 rounded-2xl bg-white shadow-md border border-yellow-300 transition-all duration-500 ease-in-out hover:bg-yellow-100 hover:shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="100" > <!-- DIV PAI DO CARD 1 -->
-                        <div class="flex justify-center items-center mx-auto mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white shadow-inner" >  <!-- ÍCONE DO 1º CARD -->
-                            <i class="fa-solid fa-balance-scale text-yellow-400 text-2xl"></i>
-                        </div>
-                        <!-- TÍTULO CARD 1 -->
-                        <h3 class="mb-3 text-xl font-bold text-center group-hover:text-yellow-900">
-                        Consultoria Jurídica Estratégica
-                        </h3>
-                        <!-- CORPO TEXTUAL DO 1º CARD -->
-                        <p class="text-gray-700 group-hover:text-yellow-800 text-justify">
-                            Desenvolvemos um plano estratégico jurídico alinhado com os objetivos do seu negócio, oferecendo assessoria completa para resolver questões complexas, proteger seus interesses e proporcionar estabilidade jurídica. Nossa abordagem combina experiência, criatividade e análise aprofundada para maximizar os resultados para sua empresa.            
+                    <!-- DIFERENCIAL 1 -->
+                    <div class="p-8 rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-user-tie text-4xl text-[#c49b57] mb-4"></i>
+                    <p class="text-xl font-semibold text-gray-800 mb-2">Atendimento Pessoal e Estratégico</p>
+                    <p class="text-sm text-gray-600">Cada cliente é atendido diretamente por advogados seniores, com total dedicação à compreensão do caso, riscos e objetivos específicos.</p>
+                    </div>
+            
+                    <!-- DIFERENCIAL 2 -->
+                    <div class="p-8 rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-scale-balanced text-4xl text-[#c49b57] mb-4"></i>
+                        <p class="text-xl font-semibold text-gray-800 mb-2">Excelência Técnica com Comunicação Clara</p>
+                        <p class="text-sm text-gray-600">
+                            Traduzimos a complexidade do Direito com precisão e clareza. Nossos clientes se sentem seguros porque entendem cada etapa, cada escolha e cada possibilidade do seu caso.
                         </p>
                     </div>
             
-                    <!-- SERVIÇO 2 -->
-                    <div class="group p-6 rounded-2xl bg-white shadow-md border border-yellow-300 transition-all duration-500 ease-in-out hover:bg-yellow-100 hover:shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="200" > <!-- DIV PAI DO CARD 2 -->
-                        <div class="flex justify-center items-center mx-auto mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white shadow-inner"> <!-- ÍCONE DO 2º CARD -->
-                        <i class="fa-solid fa-gavel text-yellow-400 text-2xl"></i>
+                    <!-- DIFERENCIAL 3 -->
+                    <div class="p-8 rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-shield-halved text-4xl text-[#c49b57] mb-4"></i>
+                        <p class="text-xl font-semibold text-gray-800 mb-2">Discrição, Compromisso e Ética Inabalável</p>
+                        <p class="text-sm text-gray-600">Conduzimos cada caso com confidencialidade, seriedade e comprometimento real com os resultados dos nossos clientes.</p>
                     </div>
-                    <h3 class="mb-3 text-xl font-bold text-center group-hover:text-yellow-900">
-                        Advocacia Empresarial
-                    </h3>
-                    <p class="text-gray-700 group-hover:text-yellow-800 text-justify">
-                        Oferecemos serviços jurídicos especializados para empresas, com foco em soluções práticas e eficientes. Desde a elaboração de contratos até a resolução de disputas, nosso objetivo é proporcionar segurança e tranquilidade para que sua empresa continue crescendo com a certeza de que está respaldada por uma assessoria jurídica de confiança.            </p>
-                    </div>
-            
-                    <!-- SERVIÇO 3 -->
-                    <div class="group p-6 rounded-2xl bg-white shadow-md border border-yellow-300 transition-all duration-500 ease-in-out hover:bg-yellow-100 hover:shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="300" > <!-- DIV PAI DO CARD 3 -->
-                        <div class="flex justify-center items-center mx-auto mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white shadow-inner">
-                        <i class="fa-solid fa-book text-yellow-400 text-2xl"></i>
-                    </div>
-                    <h3 class="mb-3 text-xl font-bold text-center group-hover:text-yellow-900">
-                        Gestão de Litígios
-                    </h3>
-                    <p class="text-gray-700 group-hover:text-yellow-800 text-justify">
-                        Cuidamos de toda a gestão de litígios de forma estratégica e eficiente, com uma abordagem centrada no cliente. Buscamos sempre a melhor solução, seja através de negociações, acordos ou processos judiciais, garantindo que sua empresa esteja bem representada e proteja seus interesses.            </p>
-                    </div>
-            
-                    <!-- SERVIÇO 4 -->
-                    <div class="group p-6 rounded-2xl bg-white shadow-md border border-yellow-300 transition-all duration-500 ease-in-out hover:bg-yellow-100 hover:shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="400" > <!-- DIV PAI DO CARD 4 -->
-                        <div class="flex justify-center items-center mx-auto mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white shadow-inner">
-                        <i class="fa-solid fa-shield-halved text-yellow-400 text-2xl"></i>
-                    </div>
-                    <h3 class="mb-3 text-xl font-bold text-center group-hover:text-yellow-900">
-                        Compliance Regulatório
-                    </h3>
-                    <p class="text-gray-700 group-hover:text-yellow-800 text-justify">
-                        Compreendemos as necessidades de conformidade legal de sua empresa. Oferecemos consultoria completa em compliance e regulamentos específicos do setor, garantindo que você esteja em conformidade com as normas e evitando riscos jurídicos que possam afetar suas operações.            </p>
-                    </div>
-            
-                    <!-- SERVIÇO 5 -->
-                    <div class="group p-6 rounded-2xl bg-white shadow-md border border-yellow-300 transition-all duration-500 ease-in-out hover:bg-yellow-100 hover:shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="500" > <!-- DIV PAI DO CARD 5 -->
-                        <div class="flex justify-center items-center mx-auto mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white shadow-inner"> <!-- ÍCONE DO 5º CARD -->
-                        <i class="fa-solid fa-graduation-cap text-yellow-400 text-2xl"></i>
-                    </div>
-                    <h3 class="mb-3 text-xl font-bold text-center group-hover:text-yellow-900">
-                        Treinamento e Capacitação Jurídica
-                    </h3>
-                    <p class="text-gray-700 group-hover:text-yellow-800 text-justify">
-                        Oferecemos treinamentos personalizados para equipes internas de empresas, com foco em práticas jurídicas essenciais para a operação de negócios de forma segura. Nossos cursos abordam desde a prevenção de riscos até o entendimento das obrigações legais mais complexas.            </p>
-                    </div>
-            
-                    <!-- SERVIÇO 6 -->
-                    <div class="group p-6 rounded-2xl bg-white shadow-md border border-yellow-300 transition-all duration-500 ease-in-out hover:bg-yellow-100 hover:shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="600" > <!-- DIV PAI DO CARD 6 -->
-                        <div class="flex justify-center items-center mx-auto mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white shadow-inner">
-                        <i class="fa-solid fa-briefcase text-yellow-400 text-2xl"></i>
-                    </div>
-                    <h3 class="mb-3 text-xl font-bold text-center group-hover:text-yellow-900">
-                        Consultoria Jurídica Estratégica
-                    </h3>
-                    <p class="text-gray-700 group-hover:text-yellow-800 text-justify">
-                        Nossa consultoria jurídica estratégica visa identificar as melhores soluções legais para o crescimento e proteção de sua empresa. Com foco em planejamento tributário, compliance corporativo e gestão de riscos, oferecemos uma visão aprofundada dos desafios e oportunidades legais que seu negócio enfrenta.            </p>
-                    </div>
-            
+          
                 </div>
+          
+                <!-- FUNDAÇÃO DO ESCRITÓRIO -->
+                <div class="mt-20 text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+                    <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                    Fundado em 2023, o <strong>Souza Barros Araújo Advogados Associados</strong> rapidamente se tornou referência por sua atuação estratégica, atendimento premium e profundo domínio técnico. 
+                    O tempo de mercado não define nossa autoridade — <strong class="text-[#c49b57]">os resultados entregues sim</strong>.
+                    </p>
+
+                    <!-- TÓPICOS FINAIS DE EXPLICAÇÃO DE DIFERENCIAIS DO ESCRITÓRIO -->          
+                    <ul class="grid gap-6 md:grid-cols-2 text-left text-gray-700 text-lg">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-certificate text-[#c49b57] mt-1"></i>
+                            <span><strong>Advogados com histórico de atuação em causas de alta complexidade</strong></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-people-group text-[#c49b57] mt-1"></i>
+                            <span><strong>Metodologia exclusiva de atendimento estratégico e personalizado</strong></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-scale-balanced text-[#c49b57] mt-1"></i>
+                            <span><strong>Rigor técnico alinhado a inteligência jurídica e agilidade operacional</strong></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-shield-halved text-[#c49b57] mt-1"></i>
+                            <span><strong>Confiança institucional: atuação junto a entidades públicas e privadas</strong></span>
+                        </li>
+                    </ul>
+              </div>
+          
+            </div>
+        </section>
+                        
+        <!-- ATENDIMENTO AO CLIENTE - COLUNAS COM ALTURA E ALINHAMENTO SIMÉTRICOS -->
+        <section class="bg-[#fefcf9] py-24">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-stretch" data-aos="fade-up" data-aos-delay="100">
+        
+                <!-- COLUNA ESQUERDA COM ENQUADRAMENTO LUXUOSO -->
+                <div class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border-l-4 border-[#c49b57] p-10 rounded-2xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.01] flex flex-col justify-between h-full">
+                    <div>
+                      <h2 class="mb-6 text-5xl tracking-tight font-extrabold text-gray-900 font-[Playfair Display] leading-tight">
+                        Atendimento ao Cliente
+                      </h2>
+                      <div class="h-[2px] w-24 bg-[#c49b57] mb-6 rounded-full"></div>
+                      <p class="text-lg text-gray-700 font-[Inter] leading-relaxed text-justify">
+                        Cada cliente é atendido com escuta ativa, visão analítica e compromisso com a resolução estratégica do problema.
+                        Nossa atuação vai além da defesa técnica: assessoramos decisões críticas, protegemos reputações, blindamos relações
+                        e conduzimos crises com rigor jurídico e postura institucional.
+                      </p>
+                    </div>
+                </div>
+                  
+                    
+                <!-- COLUNA DIREITA COM 3 CARDS COM ESTILO EFEITO 3D -->
+                <div class="flex flex-col justify-between h-full space-y-6">
+                    <!-- CARD 1 -->
+                    <div 
+                      class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.015] flex items-start gap-4"
+                      data-aos="fade-left" data-aos-delay="100"
+                    >
+                      <i class="fa-solid fa-award text-4xl text-[#c49b57] mt-1"></i>
+                      <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
+                        Reconhecido por unir sofisticação jurídica e atuação estratégica personalizada em cada detalhe.
+                      </p>
+                    </div>
+                  
+                    <!-- CARD 2 -->
+                    <div 
+                      class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.015] flex items-start gap-4"
+                      data-aos="fade-left" data-aos-delay="200"
+                    >
+                      <i class="fa-solid fa-handshake text-4xl text-[#c49b57] mt-1"></i>
+                      <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
+                        Relacionamento direto com os sócios, postura institucional e total comprometimento com cada caso.
+                      </p>
+                    </div>
+                  
+                    <!-- CARD 3 -->
+                    <div 
+                      class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.015] flex items-start gap-4"
+                      data-aos="fade-left" data-aos-delay="300"
+                    >
+                      <i class="fa-solid fa-lightbulb text-4xl text-[#c49b57] mt-1"></i>
+                      <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
+                        Soluções que antecipam riscos e fortalecem decisões — mais do que defesa, trata-se de inteligência jurídica.
+                      </p>
+                    </div>
+                </div>
+                  
+                  
+            </div>
+        </section>
+  
+        
+        <!-- GRID DE SERVIÇOS -->
+        <section id="services" class="bg-white py-24">
+            <div class="max-w-7xl mx-auto px-6">
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                <!-- SERVIÇO 1 -->
+                <div class="group p-10 rounded-2xl bg-white shadow-xl border border-[#e5e3dc] hover:border-[#c49b57] hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex justify-center items-center mx-auto mb-5 w-16 h-16 rounded-full bg-[#f9f5ef] shadow-inner">
+                    <i class="fa-solid fa-lock text-[#c49b57] text-3xl"></i>
+                </div>
+                <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 group-hover:text-[#c49b57]">
+                    Intervenção em Situações de Urgência
+                </h3>
+                <p class="text-gray-700 text-base text-justify">
+                    Atuamos com agilidade em cenários de urgência que exigem medidas judiciais imediatas para preservar direitos, reverter prejuízos ou evitar agravamentos.
+                </p>
+                </div>
+        
+                <!-- SERVIÇO 2 -->
+                <div class="group p-10 rounded-2xl bg-white shadow-xl border border-[#e5e3dc] hover:border-[#c49b57] hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex justify-center items-center mx-auto mb-5 w-16 h-16 rounded-full bg-[#f9f5ef] shadow-inner">
+                    <i class="fa-solid fa-people-arrows text-[#c49b57] text-3xl"></i>
+                </div>
+                <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 group-hover:text-[#c49b57]">
+                    Condução Estratégica de Conflitos
+                </h3>
+                <p class="text-gray-700 text-base text-justify">
+                    Representamos nossos clientes em disputas sensíveis, conduzindo negociações, mediações ou litígios com foco em solução, imagem institucional e controle de danos.
+                </p>
+                </div>
+        
+                <!-- SERVIÇO 3 -->
+                <div class="group p-10 rounded-2xl bg-white shadow-xl border border-[#e5e3dc] hover:border-[#c49b57] hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex justify-center items-center mx-auto mb-5 w-16 h-16 rounded-full bg-[#f9f5ef] shadow-inner">
+                    <i class="fa-solid fa-scale-balanced text-[#c49b57] text-3xl"></i>
+                </div>
+                <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 group-hover:text-[#c49b57]">
+                    Interlocução Técnica com Órgãos e Instituições
+                </h3>
+                <p class="text-gray-700 text-base text-justify">
+                    Atuamos junto a autoridades, autarquias e instituições com linguagem precisa, postura profissional e legitimidade técnica, representando com firmeza e respeito.
+                </p>
+                </div>
+        
+                <!-- SERVIÇO 4 -->
+                <div class="group p-10 rounded-2xl bg-white shadow-xl border border-[#e5e3dc] hover:border-[#c49b57] hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex justify-center items-center mx-auto mb-5 w-16 h-16 rounded-full bg-[#f9f5ef] shadow-inner">
+                    <i class="fa-solid fa-lightbulb text-[#c49b57] text-3xl"></i>
+                </div>
+                <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 group-hover:text-[#c49b57]">
+                    Consultoria Jurídica em Decisões Complexas
+                </h3>
+                <p class="text-gray-700 text-base text-justify">
+                    O escritório acompanha decisões estratégicas com análises jurídicas profundas, antecipando riscos, prevendo repercussões e validando caminhos com total embasamento.
+                </p>
+                </div>
+        
+                <!-- SERVIÇO 5 -->
+                <div class="group p-10 rounded-2xl bg-white shadow-xl border border-[#e5e3dc] hover:border-[#c49b57] hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                <div class="flex justify-center items-center mx-auto mb-5 w-16 h-16 rounded-full bg-[#f9f5ef] shadow-inner">
+                    <i class="fa-solid fa-user-shield text-[#c49b57] text-3xl"></i>
+                </div>
+                <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 group-hover:text-[#c49b57]">
+                    Proteção da Imagem e Reputação
+                </h3>
+                <p class="text-gray-700 text-base text-justify">
+                    Atuamos com discrição e estratégia em contextos de exposição indevida, riscos de cancelamento, vazamentos ou conflitos com impacto na credibilidade pessoal ou institucional.
+                </p>
+                </div>
+        
+                <!-- SERVIÇO 6 -->
+                <div class="group p-10 rounded-2xl bg-white shadow-xl border border-[#e5e3dc] hover:border-[#c49b57] hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
+                <div class="flex justify-center items-center mx-auto mb-5 w-16 h-16 rounded-full bg-[#f9f5ef] shadow-inner">
+                    <i class="fa-solid fa-circle-check text-[#c49b57] text-3xl"></i>
+                </div>
+                <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 group-hover:text-[#c49b57]">
+                    Apoio Jurídico Contínuo e Preventivo
+                </h3>
+                <p class="text-gray-700 text-base text-justify">
+                    Acompanhamos nossos clientes em sua rotina decisória, oferecendo segurança jurídica constante em documentos, posturas, contratos e posicionamentos.
+                </p>
+                </div>
+            </div>
             </div>
         </section>
       
+                   
         <!-- NOSSA EQUIPE -->
         <section id="team" class="bg-white">
             <!-- DIV DA INTRODUÇÃO "NOSSA EQUIPE" -->
@@ -645,7 +755,6 @@
                 </div>
             </div>
         </section>
-  
 
         <!-- BLOCO DE DE MUNICIPIOS, ESTADOS E CLIENTES -->
         <section class="bg-white py-16 mt-10 mb-10">
