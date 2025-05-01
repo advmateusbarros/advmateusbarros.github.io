@@ -127,13 +127,98 @@
             Em telas maiores, continua fixed (efeito parallax ativo).*/
 
             @media (max-width: 768px) {
-        .bg-parallax {
-            background-attachment: scroll !important;
+            .bg-parallax {
+                background-attachment: scroll !important;
             }
-        }
-            
 
-        </style>
+            /* HOME principal - espaçamento mais compacto */
+            #home h1 {
+                font-size: 1.9rem !important;
+                line-height: 2.4rem;
+            }
+
+            #home p {
+                font-size: 1.05rem !important;
+                padding: 0 1rem;
+            }
+
+            #home .py-12 {
+                padding-top: 2.5rem !important;
+                padding-bottom: 2.5rem !important;
+            }
+
+            /* SECAO SOBRE */
+            #about .grid-cols-1 {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            #about img {
+                max-height: 250px;
+                object-fit: cover;
+            }
+
+            #about h2 {
+                font-size: 1.6rem !important;
+                text-align: center;
+            }
+
+            #about p,
+            #about ul {
+                font-size: 0.95rem !important;
+            }
+
+            /* BLOCOS DE DIFERENCIAIS */
+            .grid-cols-1.md\\:grid-cols-3 {
+                grid-template-columns: 1fr;
+            }
+
+            /* CARD DE ATENDIMENTO */
+            [data-aos="slide-right"] {
+                transform: translateX(20px);
+            }
+
+            /* CARDS DA EQUIPE */
+            #team .grid-cols-1.lg\\:grid-cols-3 {
+                grid-template-columns: 1fr;
+            }
+
+            #team img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+
+            #team .text-xl {
+                font-size: 1.1rem;
+            }
+
+            #team .text-justify {
+                text-align: left;
+            }
+
+            /* RAMOS DE ATUAÇÃO */
+            #areas .grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-3 {
+                grid-template-columns: 1fr;
+            }
+
+            /* CARROSSEL DE DEPOIMENTOS */
+            #testimonial-carousel p {
+                font-size: 1.05rem !important;
+            }
+
+            #testimonial-carousel strong {
+                font-size: 0.95rem;
+            }
+
+            /* FOOTER */
+            footer .grid-cols-2.sm\\:grid-cols-3 {
+                grid-template-columns: 1fr;
+            }
+            }
+
+          </style>
+          
 
     </head>      
 
@@ -225,72 +310,69 @@
 
         <!-- SOBRE/ABOUT: COLUNA DE TEXTO INTRODUTÓRIO E IMAGEM-->
         <section id="about" class="bg-[#f9f9f9] py-28">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        
-            <!-- COLUNA DE TEXTO -->
-            <div class="text-gray-800 text-justify" data-aos="fade-right">
-        
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-center text-[#1a1a1a] font-[Playfair Display]">
-                Souza Barros Araújo Advogados Associados
-                </h2>
-        
-                <p class="text-xl text-center text-[#c49b57] font-semibold mb-10 uppercase tracking-wide">
-                Excelência Jurídica com Estratégia e Resultado
-                </p>
-        
-                <p class="text-lg leading-relaxed mb-6">
-                O <strong class="text-[#1a1a1a]">Souza Barros Araújo Advogados Associados</strong> é um escritório de advocacia empresarial de alto padrão, com atuação nacional e abordagem estratégica. Mais do que prestação de serviços jurídicos, entregamos <span class="text-[#c49b57] font-medium">segurança, credibilidade e valor</span> aos nossos clientes.
-                </p>
-        
-                <p class="text-lg leading-relaxed mb-6">
-                Somos referência em soluções jurídicas sofisticadas e personalizadas, com forte embasamento técnico, análise multidisciplinar e atuação ética.
-                </p>
-        
-                <p class="text-lg font-medium mb-4 text-[#1a1a1a]">Diferenciais que nos definem:</p>
-                <ul class="text-lg list-disc pl-6 mb-6 space-y-2">
-                <li><span class="font-semibold">Rigor técnico e metodológico</span></li>
-                <li><span class="font-semibold">Gestão proativa de riscos e crises</span></li>
-                <li><span class="font-semibold">Soluções jurídicas inovadoras e orientadas por resultado</span></li>
-                </ul>
-        
-                <p class="text-lg leading-relaxed mb-6">
-                Nossos sócios e associados atuam com excelência nas seguintes áreas:
-                </p>
-        
-                <ul class="text-lg list-inside list-disc space-y-1 mb-6">
-                <li>Direito Condominial e Imobiliário</li>
-                <li>Direito Empresarial e Cível</li>
-                <li>Direito Criminal </li>
-                <li>Direito Trabalhista</li>
-                <li>Direito Tributário e Planejamento Fiscal</li>
-                <li>Direito Previdenciário</li>
-                <li>Licitações, Contratos Públicos e Administrativo</li>
-                <li>LGPD e Direito Digital</li>
-                <li>Direito Ambiental e Agrário</li>
-                <li>Direito Médico e da Saúde</li>
-                </ul>
-        
-                <p class="text-lg leading-relaxed text-gray-700 mb-10">
-                Cada caso é conduzido com máxima diligência, discrição e visão estratégica — buscando não apenas litígios eficazes, mas <strong class="text-[#c49b57]">valor jurídico real</strong> e soluções que transformam o cenário do cliente.
-                </p>
-        
-                <!-- Assinatura final -->
-                <div class="text-center mt-12">
-                <p class="text-2xl font-bold text-[#1a1a1a]">Souza Barros Araújo Advogados</p>
-                <p class="text-base text-gray-600 italic">Excelência, estratégia e resultado. Essa é a nossa assinatura.</p>
-                </div>
-            </div>
-        
-            <!-- COLUNA DAS IMAGENS -->
-            <div class="space-y-10" data-aos="fade-left">
-                <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
-                <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.png" alt="Sócios do Escritório">
-                </div>
-                <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
-                <img class="w-full h-80 object-contain md:object-cover hover:scale-105 transition-transform duration-700" src="src/images/logo/logo_fundo_preto.jpg" alt="Logo do Escritório">
-                </div>
-            </div>
-        
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">        
+                <!-- COLUNA DE TEXTO -->
+                <div class="text-gray-800 text-justify" data-aos="fade-right">
+            
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-center text-[#1a1a1a] font-[Playfair Display]">
+                    Souza Barros Araújo Advogados Associados
+                    </h2>
+            
+                    <p class="text-xl text-center text-[#c49b57] font-semibold mb-10 uppercase tracking-wide">
+                    Excelência Jurídica com Estratégia e Resultado
+                    </p>
+            
+                    <p class="text-lg leading-relaxed mb-6">
+                    O <strong class="text-[#1a1a1a]">Souza Barros Araújo Advogados Associados</strong> é um escritório de advocacia empresarial de alto padrão, com atuação nacional e abordagem estratégica. Mais do que prestação de serviços jurídicos, entregamos <span class="text-[#c49b57] font-medium">segurança, credibilidade e valor</span> aos nossos clientes.
+                    </p>
+            
+                    <p class="text-lg leading-relaxed mb-6">
+                    Somos referência em soluções jurídicas sofisticadas e personalizadas, com forte embasamento técnico, análise multidisciplinar e atuação ética.
+                    </p>
+            
+                    <p class="text-lg font-medium mb-4 text-[#1a1a1a]">Diferenciais que nos definem:</p>
+                    <ul class="text-lg list-disc pl-6 mb-6 space-y-2">
+                    <li><span class="font-semibold">Rigor técnico e metodológico</span></li>
+                    <li><span class="font-semibold">Gestão proativa de riscos e crises</span></li>
+                    <li><span class="font-semibold">Soluções jurídicas inovadoras e orientadas por resultado</span></li>
+                    </ul>
+            
+                    <p class="text-lg leading-relaxed mb-6">
+                    Nossos sócios e associados atuam com excelência nas seguintes áreas:
+                    </p>
+            
+                    <ul class="text-lg list-inside list-disc space-y-1 mb-6">
+                    <li>Direito Condominial e Imobiliário</li>
+                    <li>Direito Empresarial e Cível</li>
+                    <li>Direito Criminal </li>
+                    <li>Direito Trabalhista</li>
+                    <li>Direito Tributário e Planejamento Fiscal</li>
+                    <li>Direito Previdenciário</li>
+                    <li>Licitações, Contratos Públicos e Administrativo</li>
+                    <li>LGPD e Direito Digital</li>
+                    <li>Direito Ambiental e Agrário</li>
+                    <li>Direito Médico e da Saúde</li>
+                    </ul>
+            
+                    <p class="text-lg leading-relaxed text-gray-700 mb-10">
+                    Cada caso é conduzido com máxima diligência, discrição e visão estratégica — buscando não apenas litígios eficazes, mas <strong class="text-[#c49b57]">valor jurídico real</strong> e soluções que transformam o cenário do cliente.
+                    </p>
+            
+                    <!-- Assinatura final -->
+                    <div class="text-center mt-12">
+                    <p class="text-2xl font-bold text-[#1a1a1a]">Souza Barros Araújo Advogados</p>
+                    <p class="text-base text-gray-600 italic">Excelência, estratégia e resultado. Essa é a nossa assinatura.</p>
+                    </div>
+                </div>            
+                <!-- COLUNA DAS IMAGENS -->
+                <div class="space-y-10" data-aos="fade-left">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
+                    <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.png" alt="Sócios do Escritório">
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
+                    <img class="w-full h-80 object-contain md:object-cover hover:scale-105 transition-transform duration-700" src="src/images/logo/logo_fundo_preto.jpg" alt="Logo do Escritório">
+                    </div>
+                </div>        
             </div>
         </section>
 
@@ -371,61 +453,59 @@
                 <!-- COLUNA ESQUERDA COM ENQUADRAMENTO LUXUOSO -->
                 <div class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border-l-4 border-[#c49b57] p-10 rounded-2xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.01] flex flex-col justify-between h-full">
                     <div>
-                      <h2 class="mb-6 text-5xl tracking-tight font-extrabold text-gray-900 font-[Playfair Display] leading-tight">
+                    <h2 class="mb-6 text-5xl tracking-tight font-extrabold text-gray-900 font-[Playfair Display] leading-tight">
                         Atendimento ao Cliente
-                      </h2>
-                      <div class="h-[2px] w-24 bg-[#c49b57] mb-6 rounded-full"></div>
-                      <p class="text-lg text-gray-700 font-[Inter] leading-relaxed text-justify">
+                    </h2>
+                    <div class="h-[2px] w-24 bg-[#c49b57] mb-6 rounded-full"></div>
+                    <p class="text-lg text-gray-700 font-[Inter] leading-relaxed text-justify">
                         Cada cliente é atendido com escuta ativa, visão analítica e compromisso com a resolução estratégica do problema.
                         Nossa atuação vai além da defesa técnica: assessoramos decisões críticas, protegemos reputações, blindamos relações
                         e conduzimos crises com rigor jurídico e postura institucional.
-                      </p>
+                    </p>
                     </div>
                 </div>
-                  
-                    
-                <!-- COLUNA DIREITA COM 3 CARDS COM ESTILO EFEITO 3D -->
+        
+                <!-- COLUNA DIREITA COM 3 CARDS COM EFEITO DE SLIDE E HOVER -->
                 <div class="flex flex-col justify-between h-full space-y-6">
+                
                     <!-- CARD 1 -->
                     <div 
-                      class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.015] flex items-start gap-4"
-                      data-aos="fade-left" data-aos-delay="100"
+                    class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-md transform transition duration-300 hover:shadow-2xl hover:scale-[1.03] flex items-start gap-4"
+                    data-aos="slide-right" data-aos-delay="100"
                     >
-                      <i class="fa-solid fa-award text-4xl text-[#c49b57] mt-1"></i>
-                      <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
+                    <i class="fa-solid fa-award text-4xl text-[#c49b57] mt-1"></i>
+                    <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
                         Reconhecido por unir sofisticação jurídica e atuação estratégica personalizada em cada detalhe.
-                      </p>
+                    </p>
                     </div>
-                  
+                
                     <!-- CARD 2 -->
                     <div 
-                      class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.015] flex items-start gap-4"
-                      data-aos="fade-left" data-aos-delay="200"
+                    class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-md transform transition duration-300 hover:shadow-2xl hover:scale-[1.03] flex items-start gap-4"
+                    data-aos="slide-right" data-aos-delay="200"
                     >
-                      <i class="fa-solid fa-handshake text-4xl text-[#c49b57] mt-1"></i>
-                      <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
+                    <i class="fa-solid fa-handshake text-4xl text-[#c49b57] mt-1"></i>
+                    <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
                         Relacionamento direto com os sócios, postura institucional e total comprometimento com cada caso.
-                      </p>
+                    </p>
                     </div>
-                  
+                
                     <!-- CARD 3 -->
                     <div 
-                      class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-[0_10px_20px_rgba(0,0,0,0.08)] transform transition-all duration-300 hover:shadow-[0_14px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:scale-[1.015] flex items-start gap-4"
-                      data-aos="fade-left" data-aos-delay="300"
+                    class="bg-gradient-to-br from-[#fefdfb] to-[#f6f3ee] border border-[#e7e3dc] rounded-2xl p-6 shadow-md transform transition duration-300 hover:shadow-2xl hover:scale-[1.03] flex items-start gap-4"
+                    data-aos="slide-right" data-aos-delay="300"
                     >
-                      <i class="fa-solid fa-lightbulb text-4xl text-[#c49b57] mt-1"></i>
-                      <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
+                    <i class="fa-solid fa-lightbulb text-4xl text-[#c49b57] mt-1"></i>
+                    <p class="text-gray-700 font-[Inter] text-base leading-relaxed">
                         Soluções que antecipam riscos e fortalecem decisões — mais do que defesa, trata-se de inteligência jurídica.
-                      </p>
+                    </p>
                     </div>
-                </div>
-                  
-                  
+                
+                </div>    
             </div>
-        </section>
-  
+        </section>    
         
-        <!-- GRID DE SERVIÇOS -->
+        <!-- GRID DE SERVIÇOS (6 serviços) -->
         <section id="services" class="bg-white py-24">
             <div class="max-w-7xl mx-auto px-6">
             <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
@@ -509,8 +589,7 @@
             </div>
             </div>
         </section>
-      
-                   
+                         
         <!-- NOSSA EQUIPE -->
         <section id="team" class="bg-white">
             <!-- DIV DA INTRODUÇÃO "NOSSA EQUIPE" -->
@@ -535,7 +614,7 @@
                 <div class="flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8"
                     data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
                     <a href="#">
-                        <img class="w-60 h-60 object-cover rounded-lg mx-auto" src="./src/images/team/perfil_gabriel.jpeg" alt="Gabriel Avatar">
+                        <img class="w-60 h-60 object-cover object-top rounded-lg mx-auto" src="./src/images/team/perfil_gabriel.jpeg" alt="Gabriel Avatar">
                     </a>
                     <div class="p-5 min-h-[620px] flex flex-col justify-between">
                         <div>
@@ -561,7 +640,6 @@
                         </ul>
                     </div>
                 </div>
-
 
                 <!-- CARD 2 - MATEUS BARROS-->
                 <div class="flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8"
@@ -900,7 +978,7 @@
 
             <!-- Final com geometria correta -->
             <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-                <svg viewBox="0 0 100 10" preserveAspectRatio="none" class="w-full h-62 text-white">
+                <svg viewBox="0 0 100 10" preserveAspectRatio="none" class="w-full h-[62px] text-white">
                 <polygon fill="currentColor" points="0,10 100,0 100,10"/>
                 </svg>
             </div>
