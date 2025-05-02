@@ -222,21 +222,67 @@
             }
 
         </style>
+
+        <!-- Estilo Nav Link (Sublinhado personalizado + scroll spy) -->
+        <style>
+            .nav-link {
+                position: relative;
+                display: block;
+                padding: 0.5rem 1rem;
+                border-radius: 0.375rem;
+                color: #000;
+                transition: all 0.3s;
+            }
+
+            .nav-link::after {
+                content: '';
+                position: absolute;
+                bottom: -14px; /* mais distante da área de hover */
+                left: 1rem;
+                right: 1rem;
+                height: 2px;
+                background-color: #facc15;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.3s ease;
+            }
+
+            .nav-link:hover {
+                background-color: #eab800;
+                color: white;
+            }
+
+            .nav-link:hover::after {
+                transform: scaleX(1);
+            }
+
+            .nav-link.active {
+                color: #facc15;
+                font-weight: 600;
+            }
+
+            .nav-link.active::after {
+                transform: scaleX(1);
+            }
+        </style>
           
 
     </head>      
 
     <body>
             
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent">
+        <div id="scrollProgress" class="h-full bg-yellow-500 w-0 transition-all duration-300 ease-out"></div>
+    </div>
+    
         <!-- NAVBAR PREMIUM REFINADA -->
-        <nav class="sticky top-0 z-50 w-full bg-white border-b border-yellow-500 shadow-md transition-all duration-300">
+        <nav class="sticky top-0 z-40 w-full bg-white border-b border-yellow-500 shadow-md transition-all duration-300">
             <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-center md:justify-between p-4 text-center">
-        
                 <!-- LOGO -->
                 <a href="#home" class="flex items-center space-x-3">
                     <img src="src/images/logo/colorida_semfundo_legenda.png" alt="Logo do Escritório Souza Barros Araújo" class="w-56 md:w-48 h-auto">
-                </a>
-            
+                </a>            
                 <!-- BOTÕES SUPERIORES -->
                 <div class="flex md:order-2 items-center space-x-2">
                     <!-- CONTATAR -->
@@ -250,70 +296,66 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     </button>
-                </div>
-            
+                </div>        
                 <!-- LINKS DO MENU -->
                 <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-main">
                     <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-sm font-medium">
-                    <li>
-                        <a href="#home" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Início</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#team" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Nossa Equipe</a>
-                    </li>
-                    <li>
-                        <a href="#areas" class="block py-2 px-4 text-black rounded-md hover:bg-yellow-500 hover:text-white transition duration-200">Área de Atuação</a>
-                    </li>
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#services" class="nav-link">Serviços</a></li>
+                        <li><a href="#team" class="nav-link">Nossa Equipe</a></li>
+                        <li><a href="#areas" class="nav-link">Área de Atuação</a></li>
+                        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-        <!-- HOME ULTRA EXECUTIVO -->
-        <section id="home" class="relative bg-gradient-to-b from-gray-50 via-white to-white">
-            <div class="py-12 px-6 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
-
-                <!-- Badge de Consultoria Premium -->
-                <a href="#" class="inline-flex justify-between items-center py-2 px-6 mb-8 text-sm font-medium text-gray-700 border border-yellow-500 bg-white rounded-full shadow-md hover:bg-yellow-500 hover:text-white transition-all">
-                    <i class="fa-regular fa-lightbulb mr-2"></i> Consultoria Jurídica Especializada
+        <!-- HOME ULTRA EXECUTIVO REFINADO -->
+        <section id="home" class="relative bg-gradient-to-b from-[#d4c4a9] via-white to-white shadow-inner">
+            <div class="relative py-16 md:py-20 px-6 mx-auto max-w-screen-xl text-center lg:px-12">
+                <!-- Badge de Destaque -->
+                <a href="#contato" class="inline-flex items-center gap-2 py-1.5 px-5 mb-3 text-sm font-medium text-gray-700 border border-yellow-500 bg-white rounded-full shadow-md hover:bg-yellow-600 hover:text-white transition-all duration-300">
+                    <i class="fa-regular fa-lightbulb text-yellow-600 group-hover:text-white transition"></i>
+                    Consultoria Jurídica Especializada
                 </a>
-
-                <!-- Bloco de Conteúdo Centralizado -->
-                <div class="bg-white p-8 rounded-2xl shadow-2xl inline-block">
-
+                <!-- Caixa com Fundo 3D e Conteúdo Executivo -->
+                <div class="bg-white/90 backdrop-blur-sm shadow-2xl rounded-2xl px-8 py-10 max-w-3xl mx-auto" data-aos="fade-up">            
                     <!-- Título Principal -->
-                    <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                        Assessoria Jurídica <br> Para Empresas
-                    </h1>
-                    
-
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-[Playfair Display] font-bold tracking-wide bg-gradient-to-r from-[#c49b57] to-yellow-700 text-transparent bg-clip-text mb-2">
+                    Souza Barros Araújo
+                    </h1>                
+                    <!-- Subtítulo -->
+                    <p class="text-base md:text-lg font-semibold uppercase text-gray-800 mb-1 tracking-wider">
+                    Advogados Associados
+                    </p>                
+                    <!-- Linha decorativa -->
+                    <div class="w-3/4 md:w-2/3 h-[3px] bg-[#c49b57] mx-auto my-1 rounded-full"></div>
+            
+                    <!-- Descritivo -->
+                    <p class="text-sm md:text-base font-medium tracking-wider uppercase text-[#c49b57]">
+                    Consultoria e Assessoria Jurídica
+                    </p>                        
                     <!-- Subtítulo Elegante -->
-                    <p class="mb-10 text-lg md:text-xl font-light text-gray-600 lg:px-32">
-                        Defendemos seus direitos com excelência, ética e compromisso, atuando como parceiros estratégicos para o crescimento da sua empresa.
-                    </p>
-
-                    <!-- Botão Premium -->
-                    <div class="flex flex-col mb-10 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                        <a href="#contato" class="inline-flex justify-center items-center py-4 px-8 text-base font-medium text-gray-900 bg-white border border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white transition-all duration-300">
-                            Conhecer
-                            <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                            </svg>
+                    <p class="mb-10 text-lg md:text-xl font-light text-gray-600 max-w-3xl mx-auto">
+                    Defendemos seus direitos com excelência, ética e compromisso, atuando como parceiros estratégicos para o crescimento da sua empresa.
+                    </p>            
+                    <!-- Botões com Sombra e Animação -->
+                    <div class="flex flex-col lg:flex-row justify-center gap-4 lg:gap-6">      
+                        <a href="#about" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-yellow-600 border border-yellow-500 hover:bg-yellow-600 hover:text-white rounded-full shadow-md transition duration-300">
+                            Saiba mais
                         </a>
-                    </div>
-
-                </div>
+                    </div>                    
+                </div>        
             </div>
-        </section>
+            <!-- Transição refinada para a próxima seção -->
+            <div class="h-10 bg-gradient-to-b from-white/90 to-[#f8f9fb] shadow-inner">                
+            </div>
+
+        </section>  
 
         <!-- SOBRE/ABOUT: COLUNA DE TEXTO INTRODUTÓRIO E IMAGEM-->
-        <section id="about" class="bg-[#f9f9f9] py-28">
+        <section id="about" class="bg-[#f9f9f9] py-10">
             <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">        
                 <!-- COLUNA DE TEXTO -->
                 <div class="text-gray-800 text-justify" data-aos="fade-right">
@@ -752,7 +794,7 @@
                 
                 <!-- TÍTULO -->
                 <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4" data-aos="fade-up">
-                    Ramos de Atuação
+                    Área de Atuação
                 </h2>
                 <p class="text-lg text-gray-600 :text-gray-300 mb-12" data-aos="fade-up" data-aos-delay="100">
                     Atuamos estrategicamente nas mais diversas áreas do Direito, oferecendo soluções jurídicas completas, personalizadas e eficazes.
@@ -901,37 +943,39 @@
         </section>
     
         <!-- (O QUE DIZEM NOSSOS CLIENTES ? - DEPOIMENTOS EM CARROSSEL EXECUTIVO -->
-        <div style="background: linear-gradient(135deg, #f0f2f5, #ffffff); padding: 60px 20px;">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="margin-bottom: 40px; font-size: 32px; font-weight: 600; color: #333;">O que dizem nossos clientes</h2>
-        
-            <div id="testimonial-carousel" style="position: relative; overflow: hidden; min-height: 300px;">
-                <div class="testimonial" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s; display: flex; flex-direction: column; align-items: center;">
-                <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 40px 30px; border-radius: 16px; max-width: 700px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
-                    <div style="color: #f5b50a; font-size: 26px; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; font-size: 20px; color: #555; margin-bottom: 20px;">"Desde o primeiro contato, senti que estava em boas mãos. Profissionais éticos, humanos e extremamente competentes."</p>
-                    <strong style="display: block; margin-top: 10px; font-size: 18px; color: #222;"> João Silva</strong>
-                </div>
-                </div>
-        
-                <div class="testimonial" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s; display: flex; flex-direction: column; align-items: center;">
-                <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 40px 30px; border-radius: 16px; max-width: 700px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
-                    <div style="color: #f5b50a; font-size: 26px; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; font-size: 20px; color: #555; margin-bottom: 20px;">"Me senti acolhida e segura em todas as etapas do meu processo. Eles não apenas defendem, eles cuidam de você."</p>
-                    <strong style="display: block; margin-top: 10px; font-size: 18px; color: #222;"> Maria Souza</strong>
-                </div>
-                </div>
-        
-                <div class="testimonial" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s; display: flex; flex-direction: column; align-items: center;">
-                <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 40px 30px; border-radius: 16px; max-width: 700px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
-                    <div style="color: #f5b50a; font-size: 26px; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; font-size: 20px; color: #555; margin-bottom: 20px;">"O cuidado, a clareza nas informações e o respeito com que fui tratado foram surpreendentes. Gratidão eterna."</p>
-                    <strong style="display: block; margin-top: 10px; font-size: 18px; color: #222;"> Ana Pereira</strong>
-                </div>
+        <section id="depoimentos"> 
+            <div style="background: linear-gradient(135deg, #f0f2f5, #ffffff); padding: 60px 20px;">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 style="margin-bottom: 40px; font-size: 32px; font-weight: 600; color: #333;">O que dizem nossos clientes</h2>
+                
+                    <div id="testimonial-carousel" style="position: relative; overflow: hidden; min-height: 300px;">
+                        <div class="testimonial" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s; display: flex; flex-direction: column; align-items: center;">
+                            <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 40px 30px; border-radius: 16px; max-width: 700px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                                <div style="color: #f5b50a; font-size: 26px; margin-bottom: 15px;">★★★★★</div>
+                                <p style="font-style: italic; font-size: 20px; color: #555; margin-bottom: 20px;">"Desde o primeiro contato, senti que estava em boas mãos. Profissionais éticos, humanos e extremamente competentes."</p>
+                                <strong style="display: block; margin-top: 10px; font-size: 18px; color: #222;"> João Silva</strong>
+                            </div>
+                        </div>
+                
+                        <div class="testimonial" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s; display: flex; flex-direction: column; align-items: center;">
+                            <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 40px 30px; border-radius: 16px; max-width: 700px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                                <div style="color: #f5b50a; font-size: 26px; margin-bottom: 15px;">★★★★★</div>
+                                <p style="font-style: italic; font-size: 20px; color: #555; margin-bottom: 20px;">"Me senti acolhida e segura em todas as etapas do meu processo. Eles não apenas defendem, eles cuidam de você."</p>
+                                <strong style="display: block; margin-top: 10px; font-size: 18px; color: #222;"> Maria Souza</strong>
+                            </div>
+                        </div>
+                
+                        <div class="testimonial" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s; display: flex; flex-direction: column; align-items: center;">
+                            <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 40px 30px; border-radius: 16px; max-width: 700px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                                <div style="color: #f5b50a; font-size: 26px; margin-bottom: 15px;">★★★★★</div>
+                                <p style="font-style: italic; font-size: 20px; color: #555; margin-bottom: 20px;">"O cuidado, a clareza nas informações e o respeito com que fui tratado foram surpreendentes. Gratidão eterna."</p>
+                                <strong style="display: block; margin-top: 10px; font-size: 18px; color: #222;"> Ana Pereira</strong>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
+        </section>
         
         <!-- (SCRIPT - O QUE DIZEM NOSSOS CLIENTES ? - DEPOIMENTOS EM CARROSSEL EXECUTIVO -->
         <script>
@@ -1151,14 +1195,42 @@
             });
         </script>
 
-
-
         <!-- TAILWINDCSS VIA CDN -->
         <!-- OBS: normalmente é melhor carregar no <head>, mas pode estar aqui se for controlado manualmente -->
         <script src="https://cdn.tailwindcss.com"></script>
 
         <script src="src/js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>  
+
+        <!-- PROGRESSO NAVBAR-->
+        <script>
+            // Scroll Progress
+            window.addEventListener('scroll', () => {
+                const progress = document.getElementById('scrollProgress');
+                const totalHeight = document.body.scrollHeight - window.innerHeight;
+                const progressHeight = (window.scrollY / totalHeight) * 100;
+                progress.style.width = progressHeight + "%";
+            });
+        
+            // Scroll Spy
+            window.addEventListener("scroll", () => {
+                const sections = document.querySelectorAll("section[id]");
+                const navLinks = document.querySelectorAll(".nav-link");
+                let current = "";
+        
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 120;
+                    if (window.scrollY >= sectionTop) current = section.getAttribute("id");
+                });
+        
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === `#${current}`) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        </script>
 
                
         <!-- BOTÃO WHATSAPP -->
