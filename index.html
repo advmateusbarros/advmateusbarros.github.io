@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR" class="scroll-smooth">
 
     <head>
@@ -27,6 +28,9 @@
         <title>Souza Barros Araújo Advogados Associados</title>
     
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- SCRIPT PERSONALIZADO DO SITE -->
+        <script src="src/js/head.js" defer></script>
 
         <!-- Favicon -->
         <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
@@ -217,7 +221,7 @@
             }
             }
 
-          </style>
+        </style>
           
 
     </head>      
@@ -230,7 +234,7 @@
         
                 <!-- LOGO -->
                 <a href="#home" class="flex items-center space-x-3">
-                    <img src="src/images/logo/colorida_semfundo_legenda.png" alt="Logo SBA" class="w-56 md:w-48 h-auto">
+                    <img src="src/images/logo/colorida_semfundo_legenda.png" alt="Logo do Escritório Souza Barros Araújo" class="w-56 md:w-48 h-auto">
                 </a>
             
                 <!-- BOTÕES SUPERIORES -->
@@ -367,10 +371,10 @@
                 <!-- COLUNA DAS IMAGENS -->
                 <div class="space-y-10" data-aos="fade-left">
                     <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
-                    <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.png" alt="Sócios do Escritório">
+                    <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.png" alt="Foto/Imagem do Escritório Souza Barros Araújo Advogados Associados e SBA Consultoria e Assessoria Jurídica">
                     </div>
                     <div class="relative overflow-hidden rounded-2xl shadow-xl border-[6px] border-[#c49b57]">
-                    <img class="w-full h-80 object-contain md:object-cover hover:scale-105 transition-transform duration-700" src="src/images/logo/logo_fundo_preto.jpg" alt="Logo do Escritório">
+                    <img class="w-full h-80 object-contain md:object-cover hover:scale-105 transition-transform duration-700" src="src/images/logo/logo_fundo_preto.jpg" alt="Logo do Escritório SBA Assessoria e Consultoria Jurídica">
                     </div>
                 </div>        
             </div>
@@ -611,15 +615,20 @@
             <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 w-full h-full">
                             
                 <!-- CARD 1 - GABRIEL SOUZA -->
-                <div class="flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8"
+                <div class="group flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-yellow-500"
                     data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-                    <a href="#">
-                        <img class="w-60 h-60 object-cover object-top rounded-lg mx-auto" src="./src/images/team/perfil_gabriel.jpeg" alt="Gabriel Avatar">
+                    
+                    <!-- Imagem clicável com efeito -->
+                    <a href="socios/drgabriel.html" class="relative overflow-hidden rounded-lg block">
+                        <img class="w-60 h-60 object-cover object-top rounded-lg mx-auto transition-transform duration-500 group-hover:scale-105" 
+                            src="./src/images/team/perfil_gabriel.jpeg" 
+                            alt="Imagem do Advogado Dr. Gabriel Pereira de Souza">
                     </a>
+
                     <div class="p-5 min-h-[620px] flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold tracking-tight text-gray-900">
-                                <a href="#">DR. GABRIEL SOUZA</a>
+                            <h3 class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                                <a href="socios/drgabriel.html">DR. GABRIEL SOUZA</a>
                             </h3>
                             <span class="text-gray-500 block mt-1">Sócio Fundador</span>
                         </div>
@@ -631,8 +640,14 @@
                                 <strong>Diferenciais:</strong> Sólido histórico de absolvições; expertise em jurisprudência penal; visão estratégica das interfaces entre criminal e administrativo.
                             </p>
                         </div>
+
+                        <!-- Botão para acesso direto -->
+                        <a href="socios/drgabriel.html" class="mt-4 inline-block text-sm font-medium text-yellow-600 border border-yellow-500 px-5 py-2 rounded-full transition-all hover:bg-yellow-500 hover:text-white">
+                            Ver perfil completo
+                        </a>
+
                         <!-- Redes Sociais -->
-                        <ul class="flex justify-center space-x-4 mt-auto">
+                        <ul class="flex justify-center space-x-4 mt-6">
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-linkedin-in"></i></a></li>
@@ -641,77 +656,91 @@
                     </div>
                 </div>
 
-                <!-- CARD 2 - MATEUS BARROS-->
-                <div class="flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8"
-                data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
-                <a href="#">
-                        <img class="w-60 h-60 object-cover rounded-lg mx-auto" src="./src/images/team/perfil_mateus.jpeg" alt="Mateus Avatar">                    </a>
+                <!-- CARD 2 - MATEUS BARROS -->
+                <div class="group flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-yellow-500"
+                    data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+
+                    <!-- Imagem clicável com efeito -->
+                    <a href="socios/drmateus.html" class="relative overflow-hidden rounded-lg block">
+                        <img class="w-60 h-60 object-cover object-top rounded-lg mx-auto transition-transform duration-500 group-hover:scale-105" 
+                            src="./src/images/team/perfil_mateus.jpeg" 
+                            alt="Imagem do Advogado Dr. Mateus Barros">                        
+                    </a>
+
                     <div class="p-5 min-h-[620px] flex flex-col justify-between">
-                            <h3 class="text-xl font-bold tracking-tight text-gray-900">
-                            <a href="#">DR. MATEUS BARROS</a>
+                        <div>
+                            <h3 class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                                <a href="socios/drmateus.html">DR. MATEUS BARROS</a>
                             </h3>
-                        <span class="text-gray-500">Sócio Fundador</span>
-                        <p class="mt-3 mb-4 font-light text-gray-500 text-justify">
+                            <span class="text-gray-500 block mt-1">Sócio Fundador</span>
+                        </div>
+                        <div>
+                            <p class="mt-3 mb-4 font-light text-gray-500 text-justify">
+                                Atua na defesa de profissionais da saúde, clínicas e hospitais em litígios de alta complexidade, com ampla experiência em responsabilidade civil médica, perícias técnicas e consultoria regulatória. Integrou o corpo jurídico da Consultoria Jurídica da UNIMED, prestando suporte estratégico em contencioso.
+                            </p>
+                            <p class="mb-4 font-light text-gray-500 text-justify">
+                                Dr. Mateus Barros possui vasta experiência em: defesa institucional para profissionais da saúde; consultoria em licitações da saúde; concessões hospitalares; políticas públicas de saúde; processos éticos no CRM e CFM.
+                            </p>
+                            <p class="mb-4 font-light text-gray-500 text-justify">
+                                <strong>Diferenciais:</strong> Domínio das normas sanitárias e de saúde; experiência junto a agências reguladoras; abordagem integrativa entre público e privado.
+                            </p>
+                        </div>
 
-                            Atua na defesa de profissionais da saúde, 
-                            clínicas e hospitais em litígios de alta complexidade, com ampla experiência em responsabilidade civil médica, 
-                            perícias técnicas e consultoria regulatória. 
-                            Integrou o corpo jurídico da Consultoria Jurídica da UNIMED, 
-                            prestando suporte estratégico em contencioso.
+                        <!-- Botão para acesso direto -->
+                        <a href="socios/drmateus.html" class="mt-4 inline-block text-sm font-medium text-yellow-600 border border-yellow-500 px-5 py-2 rounded-full transition-all hover:bg-yellow-500 hover:text-white">
+                            Ver perfil completo
+                        </a>
 
-                            Dr. Mateus Barros possui vasta experiência em
-                            
-                            Defesa institucional em ações cíveis e administrativas para médicos e estabelecimentos de saúde;                            
-                                            
-                            Consultoria em processos licitatórios e contratos administrativos na área da saúde;
-                            
-                            Atuação em parcerias público-privadas (PPPs) e concessões hospitalares;
-                            
-                            Assessoria jurídica a órgãos públicos em políticas públicas de saúde;
-                            
-                            Defesa de médicos e profissionais de saúde em processos éticos perante o Conselho Regional de Medicina (CRM) 
-                            e o Conselho Federal de Medicina (CFM).
-
-                        </p>
-
-                        <p class="mt-3 mb-4 font-light text-gray-500 text-justify">
-                            <strong>Diferenciais:</strong> Domínio das normas sanitárias e de saúde; experiência junto a agências reguladoras; abordagem integrativa entre público e privado.
-                        </p>
                         <!-- Redes Sociais -->
-                        <ul class="flex justify-center space-x-4 mt-auto">
-                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>            
-                </div> 
-
-                <!-- CARD 3 - NICOLY ARAÚJO-->
-                <div class="flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8"
-                data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                <a href="#">
-                        <img class="w-60 h-60 object-cover rounded-lg mx-auto" src="./src/images/team/perfil_nicoly.jpeg" alt="Nicoly Avatar">                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold tracking-tight text-gray-900">
-                            <a href="#">DRA. NICOLY ARAÚJO</a>
-                        </h3>
-                        <span class="text-gray-500 :text-gray-400">Sócia Fundadora</span>
-                        <p class="mt-3 mb-4 font-light text-gray-500 text-justify">
-                            <strong>Experiência:</strong> Dra. Nicoly Lidera contenciosos trabalhistas de alta complexidade, com ênfase em negociações de acordos coletivos e individuais. Estruturou soluções de planejamento previdenciário para reduzir passivos e otimizar benefícios de colaboradores. Atuou em assessoria jurídica empresarial, elaborando contratos societários e revisando estruturas societárias para mitigação de riscos. Coordenou projetos de compliance tributário, com foco em revisão de obrigações e planejamento fiscal.
-                        </p>
-                        <p class="mt-3 mb-4 font-light text-gray-500 text-justify">
-                            <strong>Diferenciais:</strong> Agilidade na resolução de conflitos; habilidade em mediação de disputas; visão estratégica multidisciplinar.
-                        </p>
-                        <!-- Redes Sociais -->
-                        <ul class="flex justify-center space-x-4 mt-auto">
+                        <ul class="flex justify-center space-x-4 mt-6">
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-linkedin-in"></i></a></li>
                             <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                </div> 
+                </div>
+
+                <!-- CARD 3 - NICOLY ARAÚJO -->
+                <div class="group flex flex-col h-full p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-yellow-500"
+                    data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+
+                    <!-- Imagem clicável com efeito -->
+                    <a href="socios/dranicoly.html" class="relative overflow-hidden rounded-lg block">
+                        <img class="w-60 h-60 object-cover object-top rounded-lg mx-auto transition-transform duration-500 group-hover:scale-105" 
+                            src="./src/images/team/perfil_nicoly.jpeg" 
+                            alt="Imagem da Dra. Nicoly Souza Araújo">
+                    </a>
+
+                    <div class="p-5 min-h-[620px] flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                                <a href="socios/dranicoly.html">DRA. NICOLY ARAÚJO</a>
+                            </h3>
+                            <span class="text-gray-500 block mt-1">Sócia Fundadora</span>
+                        </div>
+                        <div>
+                            <p class="mt-3 mb-4 font-light text-gray-500 text-justify">
+                                Dra. Nicoly lidera ações trabalhistas de alta complexidade, com foco em negociações coletivas, planejamento previdenciário. Atuou em reestruturações societárias, elaborando contratos sociais, acordos de sócios e planos de sucessão empresarial. Possui sólida experiência em Direito Tributário, com ênfase em revisão fiscal preventiva, defesa em autos de infração, aproveitamento de créditos tributários e estruturação de regimes especiais.</p>
+                            <p class="mb-4 font-light text-gray-500 text-justify">
+                                <strong>Diferenciais:</strong> Agilidade na resolução de conflitos trabalhistas e empresariais. Visão multidisciplinar que integra aspectos do Direito do Trabalho, Direito Previdenciário, Tributário e Empresarial em soluções jurídicas completas e alinhadas aos objetivos do cliente. 
+                            </p>
+                        </div>
+
+                        <!-- Botão para acesso direto -->
+                        <a href="socios/dranicoly.html" class="mt-4 inline-block text-sm font-medium text-yellow-600 border border-yellow-500 px-5 py-2 rounded-full transition-all hover:bg-yellow-500 hover:text-white">
+                            Ver perfil completo
+                        </a>
+
+                        <!-- Redes Sociais -->
+                        <ul class="flex justify-center space-x-4 mt-6">
+                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="text-gray-500 hover:text-gray-900"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
                             
             </div>  
         
@@ -991,8 +1020,7 @@
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="#" class="flex items-center">
-                            <img src="src/images/logo/colorida_semfundo_legenda.png" class="block w-72 h-auto" alt="Drew Logo">
-                            <img src="src/images/logo/colorida_semfundo_legenda.png" class="hidden w-72 h-auto" alt="Drew Logo">
+                            <img src="src/images/logo/colorida_semfundo_legenda.png" class="block w-72 h-auto" alt= "Logo do Escritório Souza Barros Araújo Advogados Associados Assessoria e Consultoria Jurídica">
                         </a>
                     </div>
                     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -1033,7 +1061,7 @@
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto :border-gray-700 lg:my-8" />
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <span class="text-sm text-gray-500 sm:text-center :text-gray-400">© 2025 SBA Advogados AssociadosTodos os Direitos Reservados.
+                    <span class="text-sm text-gray-500 sm:text-center :text-gray-400">© 2025 SBA Advogados Associados. Todos os Direitos Reservados.
                     </span>
                     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                         <a href="#" class="text-gray-500 hover:text-gray-900 ">
@@ -1056,29 +1084,7 @@
             </div>
         </footer>
         
-        <script src="src/js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-
-        
-
-        
-        
-        <!-- BOTÃO WHATSAPP -->
-        <div class="joinchat__button" onclick="window.open('https://wa.me/5591989664444', '_blank')">
-        <div class="joinchat__icon-inner">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        </div>
-        <div class="joinchat__tooltip"><div>Fale Conosco</div></div>
-        </div>
-
-
-
-
-    
-    </body>
-
-    <!-- ========== JAVASCRIPT ========== -->
+        <!-- ========== JAVASCRIPT ========== -->
 
         <!-- CONTADOR ANIMADO PARA MUNICÍPIOS, ESTADOS E CLIENTES -->
         <script>
@@ -1121,7 +1127,7 @@
         </script>
 
         <!-- AOS (Animate On Scroll) - BIBLIOTECA DE ANIMAÇÃO AO ROLAR A PÁGINA -->
-        <!-- OBS: Você só precisa de UMA dessas versões -->
+
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js">
         </script>
 
@@ -1132,12 +1138,28 @@
             });
         </script>
 
-        <!-- SCRIPT PERSONALIZADO DO SITE -->
-        <script src="src/js/head.js" defer></script>
+
 
         <!-- TAILWINDCSS VIA CDN -->
         <!-- OBS: normalmente é melhor carregar no <head>, mas pode estar aqui se for controlado manualmente -->
         <script src="https://cdn.tailwindcss.com"></script>
 
+        <script src="src/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>  
+
+               
+        <!-- BOTÃO WHATSAPP -->
+        <div class="joinchat__button" onclick="window.open('https://wa.me/5591989664444', '_blank')">
+        <div class="joinchat__icon-inner">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </div>
+        <div class="joinchat__tooltip"><div>Fale Conosco</div></div>
+        </div>
+
+
+
+
+    
+    </body>
 
 </html>
