@@ -29,8 +29,12 @@
     
         <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- SCRIPT PERSONALIZADO DO SITE -->
+        <!-- REFERÊNCIA AO ARQUIVO DE JAVA SCRIPT-->
         <script src="src/js/head.js" defer></script>
+        <script src="src/js/script.js" defer></script>
+
+        <!-- REFERÊNCIA AO ARQUIVO CSS (STYLE)-->
+        <link rel="stylesheet" href="src/css/style.css">
 
         <!-- Favicon -->
         <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
@@ -47,226 +51,8 @@
         <!-- Tailwind + Flowbite -->
         <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-
-    
-        <!-- Estilo personalizado no final para evitar conflitos -->
-        <style>
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-    
-        .animate-fade-in-up {
-            animation: fadeInUp 1s ease-out forwards;
-        }
-    
-        /* Estilo botão WhatsApp isolado */
-        .joinchat__button {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            z-index: 9999;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: pulse 2s infinite;
-        }
-    
-        .joinchat__icon-inner {
-            background-color: #25d366;
-            border: 2px solid white;
-            border-radius: 50%;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .joinchat__icon-inner img {
-            width: 30px;
-            height: 30px;
-        }
-    
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    
-        .joinchat__tooltip 
-            {position: absolute;
-            right: 70px;
-            background-color: #202c33;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            opacity: 0;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            font-size: 14px;}
-        
-    
-        .joinchat__button:hover .joinchat__tooltip 
-            {opacity: 1;
-            transform: translateY(-10px);}
-        
-            /* Estilo Hover dos Cards dos Serviços */
-            #services .group:hover 
-                {background-color: #f9f5ef;
-                border-color: #c49b57;
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);}
-        
-
-
-            /* Em telas menores que 768px o background-attachment vira scroll.
-            Em telas maiores, continua fixed (efeito parallax ativo).*/
-
-            @media (max-width: 768px) {
-            .bg-parallax {
-                background-attachment: scroll !important;
-            }
-
-            /* HOME principal - espaçamento mais compacto */
-            #home h1 {
-                font-size: 1.9rem !important;
-                line-height: 2.4rem;
-            }
-
-            #home p {
-                font-size: 1.05rem !important;
-                padding: 0 1rem;
-            }
-
-            #home .py-12 {
-                padding-top: 2.5rem !important;
-                padding-bottom: 2.5rem !important;
-            }
-
-            /* SECAO SOBRE */
-            #about .grid-cols-1 {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-
-            #about img {
-                max-height: 250px;
-                object-fit: cover;
-            }
-
-            #about h2 {
-                font-size: 1.6rem !important;
-                text-align: center;
-            }
-
-            #about p,
-            #about ul {
-                font-size: 0.95rem !important;
-            }
-
-            /* BLOCOS DE DIFERENCIAIS */
-            .grid-cols-1.md\\:grid-cols-3 {
-                grid-template-columns: 1fr;
-            }
-
-            /* CARD DE ATENDIMENTO */
-            [data-aos="slide-right"] {
-                transform: translateX(20px);
-            }
-
-            /* CARDS DA EQUIPE */
-            #team .grid-cols-1.lg\\:grid-cols-3 {
-                grid-template-columns: 1fr;
-            }
-
-            #team img {
-                width: 100px;
-                height: 100px;
-                object-fit: cover;
-            }
-
-            #team .text-xl {
-                font-size: 1.1rem;
-            }
-
-            #team .text-justify {
-                text-align: left;
-            }
-
-            /* RAMOS DE ATUAÇÃO */
-            #areas .grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-3 {
-                grid-template-columns: 1fr;
-            }
-
-            /* CARROSSEL DE DEPOIMENTOS */
-            #testimonial-carousel p {
-                font-size: 1.05rem !important;
-            }
-
-            #testimonial-carousel strong {
-                font-size: 0.95rem;
-            }
-
-            /* FOOTER */
-            footer .grid-cols-2.sm\\:grid-cols-3 {
-                grid-template-columns: 1fr;
-            }
-            }
-
-        </style>
-
-        <!-- Estilo Nav Link (Sublinhado personalizado + scroll spy) -->
-        <style>
-            .nav-link {
-                position: relative;
-                display: block;
-                padding: 0.5rem 1rem;
-                border-radius: 0.375rem;
-                color: #000;
-                transition: all 0.3s;
-            }
-
-            .nav-link::after {
-                content: '';
-                position: absolute;
-                bottom: -14px; /* mais distante da área de hover */
-                left: 1rem;
-                right: 1rem;
-                height: 2px;
-                background-color: #facc15;
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: transform 0.3s ease;
-            }
-
-            .nav-link:hover {
-                background-color: #eab800;
-                color: white;
-            }
-
-            .nav-link:hover::after {
-                transform: scaleX(1);
-            }
-
-            .nav-link.active {
-                color: #facc15;
-                font-weight: 600;
-            }
-
-            .nav-link.active::after {
-                transform: scaleX(1);
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"> 
           
-
     </head>      
 
     <body>
@@ -978,26 +764,7 @@
             </div>
         </section>
         
-        <!-- (SCRIPT - O QUE DIZEM NOSSOS CLIENTES ? - DEPOIMENTOS EM CARROSSEL EXECUTIVO -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-            const testimonials = document.querySelectorAll("#testimonial-carousel .testimonial");
-            let current = 0;
-        
-            function showTestimonial(index) {
-                testimonials.forEach((testimonial, i) => {
-                testimonial.style.opacity = (i === index) ? 1 : 0;
-                });
-            }
-        
-            showTestimonial(current);
-        
-            setInterval(() => {
-                current = (current + 1) % testimonials.length;
-                showTestimonial(current);
-            }, 5000); // Mudando para 5 segundos (mais suave ainda)
-            });
-        </script>
+
     
         <!-- CONTACT -->
         <section class="bg-white">
@@ -1128,119 +895,27 @@
                 </div>
             </div>
         </footer>
+
+        <!-- BOTÃO WHATSAPP -->
+        <div class="joinchat__button" onclick="window.open('https://wa.me/5591989664444', '_blank')">
+            <div class="joinchat__icon-inner">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </div>
+            <div class="joinchat__tooltip">
+                <div>Fale Conosco</div>
+            </div>
+        </div>
+            
         
         <!-- ========== JAVASCRIPT ========== -->
 
-        <!-- CONTADOR ANIMADO PARA MUNICÍPIOS, ESTADOS E CLIENTES -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                function animateCounter(id, target, duration, prefix = "") {
-                    const counter = document.getElementById(id);
-                    let start = 0;
-                    const increment = target / (duration / 16);
-
-                    function update() {
-                        start += increment;
-                        if (start < target) {
-                            counter.textContent = prefix + Math.floor(start);
-                            requestAnimationFrame(update);
-                        } else {
-                            counter.textContent = prefix + target;
-                        }
-                    }
-
-                    update();
-                }
-
-                function observeAndAnimate(id, target, duration, prefix = "") {
-                    const element = document.getElementById(id);
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                animateCounter(id, target, duration, prefix);
-                            }
-                        });
-                    }, { threshold: 0.5 });
-
-                    observer.observe(element);
-                }
-
-                observeAndAnimate("counter-municipios", 29, 2000);
-                observeAndAnimate("counter-estados", 8, 2000);
-                observeAndAnimate("counter-clientes", 950, 2000, "+");
-            });
-        </script>
-
-        <!-- AOS (Animate On Scroll) - BIBLIOTECA DE ANIMAÇÃO AO ROLAR A PÁGINA -->
-
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js">
-        </script>
-
-        <script>
-            AOS.init({
-                duration: 1000, // duração da animação em milissegundos
-                once: false     // se 'true', anima apenas uma vez
-            });
-        </script>
-
-        <!-- Animação para rolar página após voltar de outr aba-->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const hash = window.location.hash;
-                if (hash) {
-                    const target = document.querySelector(hash);
-                    if (target) {
-                        target.scrollIntoView({ behavior: "smooth" });
-                    }
-                }
-            });
-        </script>
-
-        <!-- TAILWINDCSS VIA CDN -->
-        <!-- OBS: normalmente é melhor carregar no <head>, mas pode estar aqui se for controlado manualmente -->
-        <script src="https://cdn.tailwindcss.com"></script>
-
-        <script src="src/js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>  
-
-        <!-- PROGRESSO NAVBAR-->
-        <script>
-            // Scroll Progress
-            window.addEventListener('scroll', () => {
-                const progress = document.getElementById('scrollProgress');
-                const totalHeight = document.body.scrollHeight - window.innerHeight;
-                const progressHeight = (window.scrollY / totalHeight) * 100;
-                progress.style.width = progressHeight + "%";
-            });
-        
-            // Scroll Spy
-            window.addEventListener("scroll", () => {
-                const sections = document.querySelectorAll("section[id]");
-                const navLinks = document.querySelectorAll(".nav-link");
-                let current = "";
-        
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 120;
-                    if (window.scrollY >= sectionTop) current = section.getAttribute("id");
-                });
-        
-                navLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${current}`) {
-                        link.classList.add("active");
-                    }
-                });
-            });
-        </script>
+        <!-- JS externo e scripts do site -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script src="src/js/head.js"></script>
+        <script src="src/js/script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
                
-        <!-- BOTÃO WHATSAPP -->
-        <div class="joinchat__button" onclick="window.open('https://wa.me/5591989664444', '_blank')">
-        <div class="joinchat__icon-inner">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        </div>
-        <div class="joinchat__tooltip"><div>Fale Conosco</div></div>
-        </div>
 
 
 
