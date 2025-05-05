@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: http://souzabarrosaraujo.adv.br/sitemap.xml
+
+Sitemap: https://souzabarrosaraujo.adv.br/sitemap.xml
