@@ -19,8 +19,8 @@
   
   /* --------------------------------------------------
     BOTÃO FLOTANTE DO WHATSAPP
-  -------------------------------------------------- */
-  .joinchat__button {
+-------------------------------------------------- */
+.joinchat__button {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -65,17 +65,18 @@
     transition: all 0.3s ease;
     white-space: nowrap;
     font-size: 14px;
+    margin-right: 8px; /* pequeno espaçamento do botão */
   }
   
   .joinchat__button:hover .joinchat__tooltip {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translate(-100%, -10px); /* lateral + cima */
   }
   
   @media (hover: none) {
     .joinchat__tooltip {
       opacity: 1;
-      transform: translateY(-10px);
+      transform: translate(-100%, -10px);
     }
   }
   
