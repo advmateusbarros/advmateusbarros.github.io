@@ -20,6 +20,7 @@
   /* --------------------------------------------------
     BOTÃO FLOTANTE DO WHATSAPP
 -------------------------------------------------- */
+/* BOTÃO WHATSAPP */
 .joinchat__button {
     position: fixed;
     bottom: 30px;
@@ -55,8 +56,8 @@
   
   .joinchat__tooltip {
     position: absolute;
-    right: 0;
-    transform: translateX(-100%);
+    right: 100%;
+    margin-right: 10px;
     background-color: #202c33;
     color: white;
     padding: 6px 12px;
@@ -65,19 +66,12 @@
     transition: all 0.3s ease;
     white-space: nowrap;
     font-size: 14px;
-    margin-right: 8px; /* pequeno espaçamento do botão */
   }
   
+  /* Mostra tooltip ao passar o mouse */
   .joinchat__button:hover .joinchat__tooltip {
     opacity: 1;
-    transform: translate(-100%, -10px); /* lateral + cima */
-  }
-  
-  @media (hover: none) {
-    .joinchat__tooltip {
-      opacity: 1;
-      transform: translate(-100%, -10px);
-    }
+    transform: translateY(-10px);
   }
   
   
