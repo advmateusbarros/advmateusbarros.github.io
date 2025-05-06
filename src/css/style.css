@@ -26,9 +26,12 @@
 
 html, body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
-
-.joinchat__button {
+  
+  /* Botão flutuante do WhatsApp */
+  .joinchat__button {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -61,6 +64,7 @@ html, body {
     height: 30px;
   }
   
+  /* Tooltip escondida de verdade */
   .joinchat__tooltip {
     position: absolute;
     right: 100%;
@@ -71,17 +75,18 @@ html, body {
     color: white;
     padding: 6px 12px;
     border-radius: 6px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
     font-size: 14px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   
-  /* Mostra tooltip ao passar o mouse */
+  /* Aparece no hover */
   .joinchat__button:hover .joinchat__tooltip {
+    visibility: visible;
     opacity: 1;
   }
-  
   
   /* --------------------------------------------------
     EFEITOS VISUAIS - CARDS DOS SERVIÇOS
@@ -195,22 +200,22 @@ html, body {
     }
   
 
-        .joinchat__button {
-          bottom: 20px;
-          right: 20px;
-          width: 50px;
-          height: 50px;
-        }
-      
-        .joinchat__icon-inner img {
-          width: 24px;
-          height: 24px;
-        }
-      
-        .joinchat__tooltip {
-          display: none !important; /* <- evita completamente o overflow */
-        }
-      
+    .joinchat__button {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+      }
+    
+      .joinchat__icon-inner img {
+        width: 24px;
+        height: 24px;
+      }
+    
+      .joinchat__tooltip {
+        display: none !important;
+      }
+    
   
     /* HOME */
     #home h1 {
