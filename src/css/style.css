@@ -205,3 +205,67 @@
     transform: scaleX(1);
 }
 
+
+@media (max-width: 768px) {
+    /* Tipografia */
+    h1, .text-5xl, .text-6xl, .text-7xl {
+      font-size: 1.75rem !important;
+    }
+  
+    h2, .text-4xl, .text-3xl {
+      font-size: 1.5rem !important;
+    }
+  
+    h3, .text-2xl {
+      font-size: 1.25rem !important;
+    }
+  
+    p, .text-lg, .text-base {
+      font-size: 1rem !important;
+    }
+  
+    /* Grid -> Coluna única */
+    .md\\:grid-cols-2,
+    .md\\:grid-cols-3,
+    .lg\\:grid-cols-2,
+    .lg\\:grid-cols-3,
+    .xl\\:grid-cols-3 {
+      grid-template-columns: 1fr !important;
+    }
+  
+    /* Padding lateral menor */
+    .px-6, .lg\\:px-6, .lg\\:px-8, .px-4 {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  
+    /* Margin e espaçamentos verticais */
+    .py-12, .py-24, .lg\\:py-16, .lg\\:py-12 {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+  
+    /* Imagens muito largas */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Cards responsivos */
+    .p-10, .p-8, .p-6 {
+      padding: 1rem !important;
+    }
+  
+    /* Texto justificado fica alinhado à esquerda */
+    .text-justify {
+      text-align: left !important;
+    }
+  
+    /* Seções com full height devem ser flexíveis no mobile */
+    .h-screen {
+      height: auto !important;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }}
+
+
