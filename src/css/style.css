@@ -1,5 +1,6 @@
-
-/* ANIMAÇÃO PADRÃO */
+/* --------------------------------------------------
+  ANIMAÇÕES PADRÃO
+-------------------------------------------------- */
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -9,7 +10,16 @@
     animation: fadeInUp 1s ease-out forwards;
   }
   
-  /* BOTÃO WHATSAPP */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  
+  /* --------------------------------------------------
+    BOTÃO FLOTANTE DO WHATSAPP
+  -------------------------------------------------- */
   .joinchat__button {
     position: fixed;
     bottom: 30px;
@@ -43,12 +53,6 @@
     height: 30px;
   }
   
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-  }
-  
   .joinchat__tooltip {
     position: absolute;
     right: 70px;
@@ -74,14 +78,20 @@
     }
   }
   
-  /* HOVER DOS CARDS DOS SERVIÇOS */
+  
+  /* --------------------------------------------------
+    EFEITOS VISUAIS - CARDS DOS SERVIÇOS
+  -------------------------------------------------- */
   #services .group:hover {
     background-color: #f9f5ef;
     border-color: #c49b57;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   }
   
-  /* LINKS DO MENU */
+  
+  /* --------------------------------------------------
+    ESTILO DO MENU DE NAVEGAÇÃO
+  -------------------------------------------------- */
   .nav-link {
     position: relative;
     display: block;
@@ -109,7 +119,8 @@
     color: white;
   }
   
-  .nav-link:hover::after {
+  .nav-link:hover::after,
+  .nav-link.active::after {
     transform: scaleX(1);
   }
   
@@ -118,32 +129,24 @@
     font-weight: 600;
   }
   
-  .nav-link.active::after {
-    transform: scaleX(1);
-  }
   
-  /* RESPONSIVIDADE GERAL */
+  /* --------------------------------------------------
+    RESPONSIVIDADE GERAL - MOBILE FIRST
+  -------------------------------------------------- */
   @media (max-width: 768px) {
+  
+    /* Ajuste de fundo com parallax */
     .bg-parallax {
       background-attachment: scroll !important;
     }
   
-    h1, .text-5xl, .text-6xl, .text-7xl {
-      font-size: 1.75rem;
-    }
+    /* Tipografia geral */
+    h1, .text-5xl, .text-6xl, .text-7xl { font-size: 1.75rem; }
+    h2, .text-4xl, .text-3xl { font-size: 1.5rem; }
+    h3, .text-2xl { font-size: 1.25rem; }
+    p, .text-lg, .text-base { font-size: 1rem; }
   
-    h2, .text-4xl, .text-3xl {
-      font-size: 1.5rem;
-    }
-  
-    h3, .text-2xl {
-      font-size: 1.25rem;
-    }
-  
-    p, .text-lg, .text-base {
-      font-size: 1rem;
-    }
-  
+    /* Grid padrão de 1 coluna */
     .md\:grid-cols-2,
     .md\:grid-cols-3,
     .lg\:grid-cols-2,
@@ -152,35 +155,42 @@
       grid-template-columns: 1fr !important;
     }
   
+    /* Espaçamentos horizontais */
     .px-6, .lg\:px-6, .lg\:px-8, .px-4 {
       padding-left: 1rem !important;
       padding-right: 1rem !important;
     }
   
+    /* Espaçamentos verticais */
     .py-12, .py-24, .lg\:py-16, .lg\:py-12 {
       padding-top: 2rem !important;
       padding-bottom: 2rem !important;
     }
   
+    /* Imagens responsivas */
     img {
       max-width: 100%;
       height: auto;
     }
   
+    /* Cards com padding reduzido */
     .p-10, .p-8, .p-6 {
       padding: 1rem !important;
     }
   
+    /* Justify vira alinhamento à esquerda */
     .text-justify {
       text-align: left !important;
     }
   
+    /* Seções que usavam full height */
     .h-screen {
       height: auto !important;
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
   
+    /* WhatsApp menor no mobile */
     .joinchat__button {
       bottom: 20px;
       right: 20px;
@@ -193,6 +203,7 @@
       height: 24px;
     }
   
+    /* HOME */
     #home h1 {
       font-size: 1.9rem;
       line-height: 2.4rem;
@@ -203,6 +214,7 @@
       padding: 0 1rem;
     }
   
+    /* SOBRE */
     #about .grid-cols-1 {
       display: flex;
       flex-direction: column-reverse;
@@ -223,10 +235,12 @@
       font-size: 0.95rem;
     }
   
+    /* AOS (Animações) */
     [data-aos="slide-right"] {
       transform: translateX(20px);
     }
   
+    /* EQUIPE */
     #team img {
       width: 100px;
       height: 100px;
@@ -241,6 +255,7 @@
       text-align: left;
     }
   
+    /* DEPOIMENTOS */
     #testimonial-carousel p {
       font-size: 1.05rem;
     }
@@ -249,6 +264,7 @@
       font-size: 0.95rem;
     }
   
+    /* FOOTER - grid simplificado */
     footer [class*="grid-cols-2"][class*="sm:grid-cols-3"] {
       grid-template-columns: 1fr;
     }
