@@ -1,3 +1,5 @@
+
+
 /* --------------------------------------------------
   ANIMAÇÕES PADRÃO
 -------------------------------------------------- */
@@ -21,6 +23,11 @@
     BOTÃO FLOTANTE DO WHATSAPP
 -------------------------------------------------- */
 /* BOTÃO WHATSAPP */
+
+html, body {
+    overflow-x: hidden;
+  }
+
 .joinchat__button {
     position: fixed;
     bottom: 30px;
