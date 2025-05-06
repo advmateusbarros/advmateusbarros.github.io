@@ -25,10 +25,10 @@
 /* BOTÃO WHATSAPP */
 
 html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
+
+  margin: 0;
+  padding: 0;
+}
   
   /* Botão flutuante do WhatsApp */
   .joinchat__button {
@@ -200,8 +200,6 @@ html, body {
     }
   
 
-   
-    
   
     /* HOME */
     #home h1 {
