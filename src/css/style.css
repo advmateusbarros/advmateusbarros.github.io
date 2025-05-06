@@ -55,7 +55,8 @@
   
   .joinchat__tooltip {
     position: absolute;
-    right: 70px;
+    right: 0;
+    transform: translateX(-100%);
     background-color: #202c33;
     color: white;
     padding: 6px 12px;
