@@ -24,11 +24,6 @@
 -------------------------------------------------- */
 /* BOTÃO WHATSAPP */
 
-html, body {
-
-  margin: 0;
-  padding: 0;
-}
   
   /* Botão flutuante do WhatsApp */
   .joinchat__button {
@@ -143,6 +138,14 @@ html, body {
     RESPONSIVIDADE GERAL - MOBILE FIRST
   -------------------------------------------------- */
   @media (max-width: 768px) {
+
+
+    
+    html, body {
+      overflow-x: hidden; /* ok */
+      margin: 0;
+      padding: 0;
+    }
   
     /* Ajuste de fundo com parallax */
     .bg-parallax {
