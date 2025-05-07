@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+      type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Souza Barros Araújo Advogados Associados",
+      "url": "https://souzabarrosaraujo.adv.br",
+      "logo": "https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/sbaadvogados",
+        "https://www.instagram.com/advocacia.sba"
+      ]
+    }
+
+
     // ========== AOS - Animate on Scroll ==========
     AOS.init({
         duration: 1000,
