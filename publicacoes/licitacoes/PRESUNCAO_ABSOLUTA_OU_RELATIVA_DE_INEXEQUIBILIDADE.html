@@ -26,6 +26,50 @@
 
 <body>
 
+  <!-- NAVBAR PARA ARTIGOS -->
+  <nav class="sticky top-0 z-40 w-full bg-white border-b border-yellow-500 shadow-md">
+    <!-- Scroll progress bar (opcional) -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent">
+      <div id="scrollProgress" class="h-full bg-yellow-500 w-0 transition-all duration-300 ease-out"></div>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
+      <!-- LOGO -->
+      <a href="https://souzabarrosaraujo.adv.br" class="flex items-center space-x-3">
+        <img src="../../src/images/logo/colorida_semfundo_legenda.png" alt="Logo Souza Barros Araújo" class="w-44 md:w-48 h-auto">
+      </a>
+
+      <!-- LINKS -->
+      <div class="hidden md:flex space-x-6 text-sm font-medium items-center">
+        <a href="https://souzabarrosaraujo.adv.br" class="hover:text-yellow-600 transition">Página Inicial</a>
+        <a href="https://souzabarrosaraujo.adv.br/publicacoes/publicacoes.html" class="hover:text-yellow-600 transition">Publicações</a>
+        <a href="https://wa.me/5591989664444?text=Olá,%20vim%20através%20de%20um%20artigo%20publicado%20no%20site%20do%20Escritório.%20Gostaria%20de%20falar%20com%20o%20Advogado%20Especialista." 
+          class="px-4 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white transition shadow text-sm">
+          Fale com um Advogado
+        </a>
+      </div>
+
+      <!-- Botão Mobile -->
+      <div class="md:hidden">
+        <button data-collapse-toggle="navbar-article" type="button" class="p-2 text-black rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="hidden md:hidden px-4 pb-4" id="navbar-article">
+      <ul class="flex flex-col space-y-2 text-sm font-medium">
+        <li><a href="/" class="block hover:text-yellow-600 transition">Página Inicial</a></li>
+        <li><a href="/publicacoes/publicacoes.html" class="block hover:text-yellow-600 transition">Publicações</a></li>
+        <li><a href="https://wa.me/5591989664444?text=Olá,%20vim%20através%20de%20um%20artigo%20do%20site.%20Gostaria%20de%20falar%20com%20o%20Advogado%20Especialista." class="block px-4 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white transition text-center">Fale com um Advogado</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
   <article>
     <!-- TÍTULO DO ARTIGO -->
 <header class="text-center">
