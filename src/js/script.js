@@ -90,6 +90,45 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // ========== SCROLL PARA O LADO QUANDO PASSA A PAGINA ==========
+const target = document.getElementById('scroll-fade-slide');
+
+if (target) {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        // ENTRANDO NA TELA → CENTRALIZA E APARECE
+        target.classList.remove('translate-x-32', '-translate-x-32', 'opacity-0');
+        target.classList.add('translate-x-0', 'opacity-100');
+      } else {
+        // SAINDO DA TELA → VAI EMBORA PARA A ESQUERDA E SOME
+        target.classList.remove('translate-x-0', 'opacity-100');
+        target.classList.add('-translate-x-32', 'opacity-0');
+      }
+    },
+    { threshold: 0.4 } // Quando 40% estiver visível, ativa
+  );
+
+  observer.observe(target);
+}
+
+if (target) {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        target.classList.remove('translate-x-32', 'opacity-0');
+        target.classList.add('translate-x-0', 'opacity-100');
+      } else {
+        target.classList.remove('translate-x-0', 'opacity-100');
+        target.classList.add('-translate-x-32', 'opacity-0');
+      }
+    },
+    { threshold: 0.4 }
+  );
+
+  observer.observe(target);
+}
+
     // ========== DEPOIMENTOS EM CARROSSEL ==========
     const testimonials = document.querySelectorAll("#testimonial-carousel .testimonial");
     let current = 0;

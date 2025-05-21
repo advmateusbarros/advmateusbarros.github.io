@@ -125,9 +125,15 @@
     color: #facc15;
     font-weight: 600;
   }
-  /* ================================
-   ESTILOS EXCLUSIVOS PARA ARTIGOS
-   ================================ */
+  /*  */
+.gradient-text {
+  background: linear-gradient(90deg, #facc15, #eab308);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
   
   
   
