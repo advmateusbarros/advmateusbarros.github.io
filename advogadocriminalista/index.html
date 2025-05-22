@@ -6,8 +6,9 @@
     <meta name="description" content="Landing page institucional do Dr. Gabriel Souza - Especialista em Direito Criminal. Defesa técnica, ética e estratégica em todas as fases do processo penal." />
     <meta name="author" content="Souza Barros Araújo Advogados Associados" />
     <meta name="theme-color" content="#000000" />
-    <script src="/src/js/head.js" defer></script>
-    <script src="/src/js/script.js" defer></script>
+    <!-- JS -->
+    <script src="https://souzabarrosaraujo.adv.br/src/js/head.js" defer></script>
+    <script src="https://souzabarrosaraujo.adv.br/src/js/script.js" defer></script>
     <!-- REFERÊNCIA AO ARQUIVO CSS (STYLE)-->
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Dr. Gabriel Souza | Direito Criminal | SBA Advogados</title>
@@ -22,20 +23,43 @@
     <!-- AOS (Scroll Animations) -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/src/css/style.css" />
-
+    <link rel="stylesheet" href="https://souzabarrosaraujo.adv.br/src/css/style.css">
     <!-- OPEN GRAPH - PRÉVIA PARA WHATSAPP / FACEBOOK / LINKEDIN -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://souzabarrosaraujo.adv.br/advogadocriminalista" />
-<meta property="og:title" content="Dr. Gabriel Souza | Especialista em Direito Criminal" />
-<meta property="og:description" content="Defesa estratégica, ética e técnica em todas as fases do processo penal. Atuação de excelência em casos complexos e sensíveis." />
-<meta property="og:image" content="https://souzabarrosaraujo.adv.br/src/images/team/perfil_gabriel.jpeg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-
-
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://souzabarrosaraujo.adv.br/advogadocriminalista" />
+    <meta property="og:title" content="Dr. Gabriel Souza | Especialista em Direito Criminal" />
+    <meta property="og:description" content="Defesa estratégica, ética e técnica em todas as fases do processo penal. Atuação de excelência em casos complexos e sensíveis." />
+    <meta property="og:image" content="https://souzabarrosaraujo.adv.br/src/images/team/perfil_gabriel.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
   </head>
+
   <body class="bg-black text-white font-inter">
+
+    <!-- BARRA NAV INICIAL -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/60 border-b border-[#C7A248]/20 shadow-lg transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-32 py-4 flex items-center justify-between">                
+        <!-- LOGO -->
+        <a href="/" class="flex items-center gap-2">
+        <img src="https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png" 
+            alt="Logo SBA Advogados" 
+            class="h-10 w-auto drop-shadow-xl">
+        </a>
+        <!-- MENU DESKTOP -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+            <a href="#home" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Início</a>
+            <a href="#sobre" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Sobre</a>
+            <a href="#advogado" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Equipe</a>
+            <a href="#cta" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Contato</a>
+            <a href="https://souzabarrosaraujo.adv.br/" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Escritório SBA</a>
+        </nav>
+        <!-- BOTÃO WHATSAPP -->
+        <a href="https://wa.me/5591984435055?text=Olá,%20Vim%20através%20do%20site,%20preciso%20de%20advogado."
+        class="hidden sm:inline-flex items-center gap-2 bg-[#C7A248] text-black font-semibold px-4 py-2 rounded-full text-sm shadow-md hover:bg-yellow-500 transition duration-300">
+        <i class="fab fa-whatsapp"></i> Atendimento
+        </a>
+    </div>
+    </header>
 
     <!-- BANNER DE ABERTURA - HERO SECTION -->
     <section class="relative text-white py-20 px-6 md:px-12 lg:px-32 bg-black overflow-hidden" data-aos="fade-up">
@@ -162,7 +186,7 @@
       </div>
     </section>
         
-        <!-- SECTION: ETAPAS DA DEFESA CRIMINAL -->
+    <!-- SECTION: ETAPAS DA DEFESA CRIMINAL -->
     <section id="fases-processo-penal" class="relative py-32 px-6 md:px-12 lg:px-32 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden text-white">
       <!-- DECORAÇÃO DE FUNDO -->
       <div class="absolute -top-20 -left-20 w-96 h-96 bg-yellow-500 opacity-10 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
@@ -285,7 +309,6 @@
       </div>
     </section>
 
-
     <!-- SECTION: FRASE DE IMPACTO + AVALIAÇÕES | DESIGN INSTITUCIONAL ELEGANTE -->
     <section id="depoimentos" class="relative py-28 px-6 md:px-12 lg:px-32 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden border-t border-gray-800">
 
@@ -343,50 +366,96 @@
     </section>
 
     <!-- SECTION: CTA FINAL -->
-  <section class="relative bg-black py-32 px-6 sm:px-12 lg:px-32 xl:px-48 overflow-hidden text-white">
-    <!-- LUXO E BRILHO -->
-    <div class="absolute inset-0 bg-gradient-to-br from-yellow-900/10 via-transparent to-black pointer-events-none"></div>
-    <div class="absolute top-[-5rem] left-[-5rem] w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
-    <div class="absolute bottom-[-3rem] right-[-3rem] w-64 h-64 bg-yellow-400/10 rounded-full blur-2xl animate-fade-in"></div>
-    <div class="absolute inset-0 border-t border-b border-yellow-900/10 pointer-events-none"></div>
+    <section class="relative bg-black py-32 px-6 sm:px-12 lg:px-32 xl:px-48 overflow-hidden text-white">
+      <!-- LUXO E BRILHO -->
+      <div class="absolute inset-0 bg-gradient-to-br from-yellow-900/10 via-transparent to-black pointer-events-none"></div>
+      <div class="absolute top-[-5rem] left-[-5rem] w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-[-3rem] right-[-3rem] w-64 h-64 bg-yellow-400/10 rounded-full blur-2xl animate-fade-in"></div>
+      <div class="absolute inset-0 border-t border-b border-yellow-900/10 pointer-events-none"></div>
+      <!-- CONTEÚDO CENTRAL -->
+      <div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-0" data-aos="zoom-in" data-aos-delay="100">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight mb-6">
+          Quando a sua liberdade está em risco,
+        </h2>
+        <p class="text-xl sm:text-2xl font-semibold text-yellow-500 tracking-wide leading-snug mb-10">
+          não existe margem para erro.
+        </p>
 
-<!-- CONTEÚDO CENTRAL -->
-<div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-0" data-aos="zoom-in" data-aos-delay="100">
-  <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight mb-6">
-    Quando a sua liberdade está em risco,
-  </h2>
-  <p class="text-xl sm:text-2xl font-semibold text-yellow-500 tracking-wide leading-snug mb-10">
-    não existe margem para erro.
-  </p>
+        <p class="text-base sm:text-lg lg:text-xl text-gray-400 font-light leading-relaxed mb-10 max-w-3xl mx-auto">
+          Defesa criminal estratégica e imediata, com atuação técnica em <span class="text-white">flagrantes</span>, <span class="text-white">audiências de custódia</span>, <span class="text-white">prisões preventivas</span> e acompanhamento jurídico em tempo real.
+        </p>
 
-  <p class="text-base sm:text-lg lg:text-xl text-gray-400 font-light leading-relaxed mb-10 max-w-3xl mx-auto">
-    Defesa criminal estratégica e imediata, com atuação técnica em <span class="text-white">flagrantes</span>, <span class="text-white">audiências de custódia</span>, <span class="text-white">prisões preventivas</span> e acompanhamento jurídico em tempo real.
-  </p>
+        <a href="https://api.whatsapp.com/send?phone=55919984435055&text=Olá, preciso de uma defesa criminal estratégica e urgente."
+          class="inline-flex items-center justify-center gap-3 bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-base sm:text-lg lg:text-xl py-4 px-8 sm:px-10 rounded-full shadow-xl hover:shadow-yellow-400/30 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+          <i class="fas fa-balance-scale text-xl"></i> Solicitar Defesa Imediata
+        </a>
 
-  <a href="https://api.whatsapp.com/send?phone=55919984435055&text=Olá, preciso de uma defesa criminal estratégica e urgente."
-    class="inline-flex items-center justify-center gap-3 bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-base sm:text-lg lg:text-xl py-4 px-8 sm:px-10 rounded-full shadow-xl hover:shadow-yellow-400/30 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-    <i class="fas fa-balance-scale text-xl"></i> Solicitar Defesa Imediata
-  </a>
+        <p class="mt-6 text-sm sm:text-base text-gray-500 italic">
+          Atendimento nacional 24h com prioridade para casos urgentes.
+        </p>
+      </div>
+      <!-- LINHA VISUAL -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-yellow-500 rounded-full animate-pulse-fast"></div>
+   </section>
+  
+    <!-- RODAPÉ - DIREITO PENAL -->
+    <footer class="bg-neutral-950 text-white pt-16 pb-10 px-6 md:px-12 lg:px-32">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">        
+        
+        <!-- Logo e nome -->
+        <div class="flex flex-col items-center text-center gap-4">
+          <img src="https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png" 
+              alt="Logo do Escritório Souza Barros Araújo Advogados Associados" 
+              class="w-64 h-auto drop-shadow-xl">
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Defesa Criminal Estratégica e Personalizada. <br>
+            Advocacia Penal com atuação em todo o Brasil.
+          </p>
+        </div>
 
-  <p class="mt-6 text-sm sm:text-base text-gray-500 italic">
-    Atendimento nacional 24h com prioridade para casos urgentes.
-  </p>
-</div>
+        <!-- Links rápidos -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 items-center gap-8 text-sm tracking-wide">
+          
+          <div>
+            <h3 class="text-[#C7A248] font-semibold uppercase mb-4">Institucional</h3>
+            <ul class="space-y-3 text-gray-400">
+              <li><a href="https://souzabarrosaraujo.adv.br/" class="hover:text-white transition-all duration-300">O Escritório</a></li>
+              <li><a href="https://souzabarrosaraujo.adv.br/#team" class="hover:text-white transition-all duration-300">Equipe</a></li>
+              <li><a href="#" class="hover:text-white transition-all duration-300">Contato</a></li>
+            </ul>
+          </div>
 
+          <div>
+            <h3 class="text-[#C7A248] font-semibold uppercase mb-4">Atuação Penal</h3>
+            <ul class="space-y-3 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-all duration-300">Defesa Criminal</a></li>
+              <li><a href="#" class="hover:text-white transition-all duration-300">Tribunal do Júri</a></li>
+              <li><a href="#" class="hover:text-white transition-all duration-300">Crimes Econômicos</a></li>
+            </ul>
+          </div>
 
-    <!-- LINHA VISUAL -->
-    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-yellow-500 rounded-full animate-pulse-fast"></div>
-  </section>
+          <div>
+            <h3 class="text-[#C7A248] font-semibold uppercase mb-4">Conecte-se</h3>
+            <ul class="space-y-3 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-all duration-300">Instagram</a></li>
+              <li><a href="#" class="hover:text-white transition-all duration-300">LinkedIn</a></li>
+              <li><a href="https://wa.me/5591989664444" class="hover:text-white transition-all duration-300">WhatsApp</a></li>
+            </ul>
+          </div>
 
+        </div>
+      </div>
 
+      <!-- Divider -->
+      <div class="border-t border-[#C7A248]/30 my-12"></div>
 
-    <!-- FOOTER -->
-    <footer class="bg-black text-gray-400 py-12 mt-24 border-t border-gray-800">
-      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-        <p class="text-sm">&copy; 2025 Souza Barros Araújo Advogados Associados. Todos os direitos reservados.</p>
-        <div class="flex space-x-4">
-          <a href="https://www.instagram.com/advocacia.sba" target="_blank" class="hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/sbaadvogados" target="_blank" class="hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+      <!-- Rodapé inferior -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+        <span>© 2025 Souza Barros Araújo Advogados Associados. Todos os direitos reservados.</span>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-[#C7A248] transition-all duration-300"><i class="fab fa-instagram text-lg"></i></a>
+          <a href="#" class="hover:text-[#C7A248] transition-all duration-300"><i class="fab fa-linkedin text-lg"></i></a>
+          <a href="https://wa.me/5591989664444" class="hover:text-[#C7A248] transition-all duration-300"><i class="fab fa-whatsapp text-lg"></i></a>
         </div>
       </div>
     </footer>
@@ -397,4 +466,5 @@
       AOS.init({ once: true, duration: 800, easing: 'ease-out' });
     </script>
   </body>
+
 </html>
