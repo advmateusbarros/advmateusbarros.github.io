@@ -38,24 +38,48 @@
 
     <!-- BARRA NAV INICIAL -->
     <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/60 border-b border-[#C7A248]/20 shadow-lg transition-all duration-500">
-    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-32 py-4 flex items-center justify-between">                
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-32 py-4 flex items-center justify-between">
+        
         <!-- LOGO -->
         <a href="/" class="flex items-center gap-2">
         <img src="https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png" 
             alt="Logo SBA Advogados" 
             class="h-10 w-auto drop-shadow-xl">
         </a>
+
+        <!-- BOTÃO MOBILE -->
+        <button id="menu-toggle" aria-label="Abrir menu"
+                class="md:hidden text-[#C7A248] text-2xl focus:outline-none focus:ring-2 focus:ring-[#C7A248]">
+        <i class="fas fa-bars"></i>
+        </button>
+
         <!-- MENU DESKTOP -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
-            <a href="#home" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Início</a>
-            <a href="#sobre" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Sobre</a>
-            <a href="#advogado" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Equipe</a>
-            <a href="#cta" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Contato</a>
-            <a href="https://souzabarrosaraujo.adv.br/" class="text-gray-300 hover:text-[#C7A248] transition-all duration-300">Escritório SBA</a>
+        <a href="#home" class="text-gray-300 hover:text-[#C7A248] transition">Início</a>
+        <a href="#sobre" class="text-gray-300 hover:text-[#C7A248] transition">Sobre</a>
+        <a href="#advogado" class="text-gray-300 hover:text-[#C7A248] transition">Equipe</a>
+        <a href="#cta" class="text-gray-300 hover:text-[#C7A248] transition">Contato</a>
+        <a href="#perguntas-frequentes" class="text-gray-300 hover:text-[#C7A248] transition">Perguntas Frequentes</a>
+        <a href="https://souzabarrosaraujo.adv.br/" class="text-gray-300 hover:text-[#C7A248] transition">Escritório SBA</a>
         </nav>
+
         <!-- BOTÃO WHATSAPP -->
-        <a href="https://wa.me/5591984435055?text=Olá,%20Vim%20através%20do%20site,%20preciso%20de%20advogado."
-        class="hidden sm:inline-flex items-center gap-2 bg-[#C7A248] text-black font-semibold px-4 py-2 rounded-full text-sm shadow-md hover:bg-yellow-500 transition duration-300">
+        <a href="https://wa.me/5591989664444?text=Olá,%20gostaria%20de%20falar%20com%20um%20advogado%20sobre%20auxílio%20moradia."
+        class="hidden sm:inline-flex items-center gap-2 bg-[#C7A248] text-black font-semibold px-4 py-2 rounded-full text-sm shadow-md hover:bg-yellow-500 transition">
+        <i class="fab fa-whatsapp"></i> Atendimento
+        </a>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-menu" class="md:hidden bg-neutral-900 border-t border-[#C7A248]/20 px-6 py-6 space-y-4 hidden">
+        <a href="#home" class="block text-gray-300 hover:text-[#C7A248]">Início</a>
+        <a href="#sobre" class="block text-gray-300 hover:text-[#C7A248]">Sobre</a>
+        <a href="#advogado" class="block text-gray-300 hover:text-[#C7A248]">Equipe</a>
+        <a href="#cta" class="block text-gray-300 hover:text-[#C7A248]">Contato</a>
+        <a href="#perguntas-frequentes" class="block text-gray-300 hover:text-[#C7A248]">Perguntas Frequentes</a>
+        <a href="https://souzabarrosaraujo.adv.br/" class="block text-gray-300 hover:text-[#C7A248]">Escritório SBA</a>
+        <a href="https://wa.me/5591989664444?text=Olá,%20gostaria%20de%20falar%20com%20um%20advogado%20sobre%20auxílio%20moradia."
+        class="inline-flex items-center gap-2 bg-[#C7A248] text-black font-semibold px-4 py-2 rounded-full text-sm shadow-md hover:bg-yellow-500 transition">
         <i class="fab fa-whatsapp"></i> Atendimento
         </a>
     </div>
