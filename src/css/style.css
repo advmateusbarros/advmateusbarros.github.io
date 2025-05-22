@@ -76,6 +76,13 @@
     visibility: visible;
     opacity: 1;
   }
+
+    /* NAV DE SERVIÇOS DE CADA ADVOGADO (SUBPÁGINA - landing pages) */
+  .dropdown:hover .dropdown-menu {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    pointer-events: auto !important;
+  }
   
   /* --------------------------------------------------
     EFEITOS VISUAIS - CARDS DOS SERVIÇOS
@@ -134,8 +141,34 @@
 }
 
 
-  
-  
+/* Efeito LINHA embaixo do titulo h2 Landing page mateus */
+.gradient-text-glow {
+  background: linear-gradient(to right, #C7A248, #b6974b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  }
+.gradient-text-glow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, #C7A248, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gradient-text-glow:hover {
+  transform: scale(1.06);            /* Leve aumento */
+  letter-spacing: 2.0px;             /* Aumenta o espaçamento entre letras */
+}
+.gradient-text-glow:hover::after {
+  opacity: 1;
+}
   
   /* --------------------------------------------------
     RESPONSIVIDADE GERAL - MOBILE FIRST
