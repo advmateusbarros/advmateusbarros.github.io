@@ -1,4 +1,7 @@
-
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -346,3 +349,6 @@ const perguntas = [
   
   mostrarPergunta("inicio");
 });
+
+src="https://unpkg.com/aos@2.3.4/dist/aos.js"
+ AOS.init();
