@@ -1,9 +1,14 @@
-  document.getElementById('menu-toggle').addEventListener('click', function () {
-    const menu = document.getElementById('mobile-menu');
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("JavaScript carregado com sucesso!");
+
+  // === MENU TOGGLE ===
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+if (toggleBtn && menu) {
+  toggleBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
   });
-
-document.addEventListener("DOMContentLoaded", () => {
+}
 
 
     // ========== AOS - Animate on Scroll ==========
@@ -348,7 +353,6 @@ const perguntas = [
   }
   
   mostrarPergunta("inicio");
+
 });
 
-src="https://unpkg.com/aos@2.3.4/dist/aos.js"
- AOS.init();
