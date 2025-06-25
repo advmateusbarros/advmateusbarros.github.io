@@ -45,6 +45,20 @@
 
   gtag('config', 'AW-16995797158');
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href*="wa.me"], a[href*="web.whatsapp.com"], a[href*="api.whatsapp.com"]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16995797158/w-4NCO3QpM8aEKaRnag_',
+          'value': 1.0,
+          'currency': 'BRL'
+        });
+      });
+    });
+  });
+</script>
+
 </head>
     <body class="bg-black text-white font-inter">
 
@@ -128,7 +142,7 @@
             </h1>
 
             <p class="text-lg md:text-xl text-gray-300 italic max-w-2xl mx-auto leading-relaxed">
-            Apoiado por jurisprudência e garantido por lei, esse direito pode representar mais de R$ 50 mil para você. Atue agora.
+           Descubra agora se você tem direito a receber até R$ 50 mil em auxílio-moradia — mesmo que já tenha terminado a residência. Tudo 100% online.
             </p>
 
             <a href="https://wa.me/5591989664444"
