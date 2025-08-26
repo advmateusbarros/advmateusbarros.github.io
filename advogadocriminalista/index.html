@@ -46,6 +46,20 @@
 
   gtag('config', 'AW-16995797158');
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href*="wa.me"], a[href*="web.whatsapp.com"], a[href*="api.whatsapp.com"]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16995797158/w-4NCO3QpM8aEKaRnag_',
+          'value': 1.0,
+          'currency': 'BRL'
+        });
+      });
+    });
+  });
+</script>
+
   </head>
 
   <body class="bg-black text-white font-inter">
@@ -119,7 +133,7 @@
           <!-- TÍTULO -->
           <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-yellow-600">
             Advocacia Criminal<br>
-            <span class="text-white">com Excelência e Estratégia</span>
+            <span class="text-white">com Excelência, Estratégia e Urgência</span>
           </h1>
           <!-- DESCRIÇÃO -->
           <p class="text-gray-300 mb-6 text-lg md:text-xl max-w-md">
@@ -177,8 +191,8 @@
       <!-- Texto institucional -->
       <div class="max-w-5xl mx-auto space-y-6 text-lg text-gray-300 leading-relaxed px-2 md:px-0" data-aos="fade-up" data-aos-delay="400">
         <p><strong class="text-white">Gabriel Souza</strong> é advogado criminalista com forte atuação em prisões em flagrante e audiências de custódia. Defende clientes em casos de ameaça, lesão corporal, tráfico, armas, furtos, roubos e outros crimes.</p>
-        <p>Constrói sua atuação com base na <strong class="text-yellow-500">advocacia de combate</strong>, estando presente desde os primeiros momentos de uma prisão. Tem experiência real em plantões, delegacias e fóruns, com rapidez, empatia e eficácia.</p>
-        <p>Seu compromisso é unir <strong class="text-yellow-500">técnica, estratégia e sensibilidade humana</strong>. Cada caso é conduzido com seriedade, presença e foco em resultados.</p>
+        <p>Constrói sua atuação com base na <strong class="text-yellow-500">advocacia de combate</strong>, estando presente desde os primeiros momentos da prisão até o final do processo. Tem experiência real em plantões, delegacias e fóruns, com rapidez, empatia e eficácia.</p>
+        <p>Seu compromisso é unir <strong class="text-yellow-500">técnica, estratégia e sensibilidade humana</strong>, cada caso é conduzido com seriedade, presença e foco em resultados.</p>
       </div>
 
       <!-- Chamada para contato -->
@@ -267,7 +281,7 @@
 
       <!-- FASES PRINCIPAIS -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="100">
-        <!-- CARD -->
+        <!-- CARD 1 - FASE INVESTIGATIVA -->
         <div onclick="window.open('https://api.whatsapp.com/send?phone=55919984435055&text=Olá, preciso de orientação na fase investigativa.', '_blank')" 
          class="group relative bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl transition duration-300 hover:border-yellow-500 hover:bg-yellow-400/10 hover:shadow-yellow-500/20 cursor-pointer">
           <div class="absolute top-0 right-0 w-10 h-10 bg-yellow-500 rounded-bl-2xl flex items-center justify-center text-black font-bold">1</div>
@@ -278,15 +292,16 @@
             <h3 class="text-2xl font-semibold">Fase Investigativa</h3>
           </div>
           <ul class="text-gray-400 space-y-2 text-base leading-relaxed">
-            <li>B.O - Boletim de Ocorrência</li>
-            <li>Prisão em Flagrante</li>
-            <li>Intimação e Acompanhamento</li>
-            <li>Depoimento com Orientação Jurídica</li>
-            <li>Queixa-crime – Calúnia, Injúria e Difamação</li>
+            <li>Registro de Ocorrência (B.O)</li>
+            <li>Combate a Busca e Apreensão</li>
+            <li>Inquérito Policial</li>
+            <li>Acompanhamento em Delegacia</li>
+            <li>Defesa Técnica em Procedimentos Investigativos</li>
+            <li>Pareceres e Manifestações em PICs (Procedimento Investigatorio Criminal)</li>
           </ul>
         </div>
 
-        <!-- CARD -->
+        <!-- CARD 2 FASE PRÉ PROCESSUAL -->
         <div onclick="window.open('https://api.whatsapp.com/send?phone=55919984435055&text=Olá, preciso de apoio na fase pré-processual.', '_blank')" 
          class="group relative bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl transition duration-300 hover:border-yellow-500 hover:bg-yellow-400/10 hover:shadow-yellow-500/20 cursor-pointer">
           <div class="absolute top-0 right-0 w-10 h-10 bg-yellow-500 rounded-bl-2xl flex items-center justify-center text-black font-bold">2</div>
@@ -297,15 +312,18 @@
             <h3 class="text-2xl font-semibold">Fase Pré-Processual</h3>
           </div>
           <ul class="text-gray-400 space-y-2 text-base leading-relaxed">
-            <li>Atendimento 24h em Delegacias</li>
             <li>Audiência de Custódia</li>
+            <li>Atendimento 24h</li>
             <li>Análise Técnica do Caso</li>
-            <li>Estratégia de Defesa Inicial</li>
-            <li>Acordo de Não Persecução Penal</li>
+            <li>Defesa Preliminar</li>
+            <li>Representações contra atos ilegais da polícia</li>
+            <li>Acordo de Não Persecução Penal (ANPP)</li>
+            <li>Trancamento de Inquérito/Investigação</li>
+            <li>Impugnação de Medidas Cautelares</li>
           </ul>
         </div>
 
-        <!-- CARD -->
+        <!-- CARD 3 - FASE PROCESSUAL -->
         <div onclick="window.open('https://api.whatsapp.com/send?phone=55919984435055&text=Olá, preciso de assistência na fase processual.', '_blank')" 
          class="group relative bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl transition duration-300 hover:border-yellow-500 hover:bg-yellow-400/10 hover:shadow-yellow-500/20 cursor-pointer">
           <div class="absolute top-0 right-0 w-10 h-10 bg-yellow-500 rounded-bl-2xl flex items-center justify-center text-black font-bold">3</div>
@@ -317,17 +335,22 @@
           </div>
           <ul class="text-gray-400 space-y-2 text-base leading-relaxed">
             <li>Resposta à Acusação</li>
+            <li>Defesa em Audiências</li>
+            <li>Prisão Domiciliar</li>
+            <li>Pedidos em Liberdade</li>
+            <li>Sustentação Oral</li>
             <li>Habeas Corpus</li>
-            <li>Liberdade Provisória</li>
-            <li>Audiência e Sustentação</li>
-            <li>Suspensão Condicional / Transação Penal</li>
+            <li>Alegações Finais</li>
+            <li>Memoriais</li>
+            <li>Transação Penal e Suspensão Condicional do Processo</li>
+            <li>Direito de o Custodiado acompanhar velório</li>
           </ul>
         </div>
       </div>
 
       <!-- FASES AVANÇADAS -->
-      <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-10" data-aos="fade-up" data-aos-delay="200">
-        <!-- RECURSAL -->
+      <div class="mt-24 grid grid-cols-1 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="200">
+        <!-- FASE RECURSAL -->
         <div onclick="window.open('https://api.whatsapp.com/send?phone=55919984435055&text=Olá, quero entender os recursos cabíveis no meu caso.', '_blank')" 
          class="group relative bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl transition duration-300 hover:border-yellow-500 hover:bg-yellow-400/10 hover:shadow-yellow-500/20 cursor-pointer">
           <div class="absolute top-0 right-0 w-10 h-10 bg-yellow-500 rounded-bl-2xl flex items-center justify-center text-black font-bold">4</div>
@@ -338,9 +361,14 @@
             <h3 class="text-2xl font-semibold">Fase Recursal</h3>
           </div>
           <ul class="text-gray-400 space-y-2 text-base leading-relaxed">
-            <li>Tribunal de Justiça (TJ)</li>
-            <li>Superior Tribunal de Justiça (STJ)</li>
-            <li>Supremo Tribunal Federal (STF)</li>
+            <li>Elaboração de Recursos Criminais (Apelação, RESE, Embargos)</li>
+            <li>Sustentação Oral em Tribunais</li>
+            <li>Habeas Corpus em 2ª instância e Tribunais Superiores</li>
+            <li>Reclamações Constitucionais</li>
+            <li>Recursos Especiais (STJ) e Extraordinários (STF)</li>
+            <li>Revisão Criminal</li>
+            <li>Agravos Regimentais e Internos</li>
+            <li>Cumprimento de pena em domicílio </li>        
           </ul>
         </div>
 
@@ -355,11 +383,35 @@
             <h3 class="text-2xl font-semibold">Execução Penal</h3>
           </div>
           <ul class="text-gray-400 space-y-2 text-base leading-relaxed">
-            <li>Progressão de Regime</li>
-            <li>Multas Penais – Isenção e Parcelamento</li>
-            <li>Direitos em Prisão</li>
-            <li>Garantia à Visita Familiar</li>
+              <li>Cálculo de Pena e Remição</li>
+              <li>Progressão de Regime (fechado → semiaberto → aberto)</li>
+              <li>Pedido de Indulto ou Comutação</li>
+              <li>Saída temporária</li>
+              <li>Visita Íntima e Familiar</li>
+              <li>Transferência de Presídio (humanização e proximidade familiar)</li>
+              <li>Multas Penais – Revisão, Isenção e Parcelamento</li>
+              <li>Direito ao Trabalho e Estudo na Prisão</li>
+              <li>Pedido de Liberdade por Cumprimento Integral ou Antecipado</li>
+              <li>Incidente de Falsidade ou Reabilitação</li>
           </ul>
+        </div>
+        <!-- CONSULTORIA CRIMINAL PREVENTIVA -->
+        <div onclick="window.open('https://api.whatsapp.com/send?phone=55919984435055&text=Olá, gostaria de entender melhor sobre consultoria criminal preventiva.', '_blank')" 
+          class="group relative bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-2xl transition duration-300 hover:border-yellow-500 hover:bg-yellow-400/10 hover:shadow-yellow-500/20 cursor-pointer">
+            <div class="absolute top-0 right-0 w-10 h-10 bg-yellow-500 rounded-bl-2xl flex items-center justify-center text-black font-bold">6</div>
+            <div class="flex items-center mb-6 gap-4">
+              <div class="bg-yellow-500 text-black p-4 rounded-full shadow-md group-hover:scale-110 transition">
+                <i class="fas fa-user-shield text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">Consultoria Criminal Preventiva</h3>
+            </div>
+            <ul class="text-gray-400 space-y-2 text-base leading-relaxed">
+              <li>Análise de Risco Jurídico em Condutas Empresariais</li>
+              <li>Defesa de Honra e Reputação (Calúnia, Difamação em Redes Sociais)</li>
+              <li>Direito Penal Econômico, Médico, Ambiental e Eleitoral</li>
+              <li>Suporte jurídico em investigações internas</li>
+              <li>Compliance e Programas de Integridade</li>          
+            </ul>
         </div>
       </div>
 
@@ -390,8 +442,8 @@
         </p>
       </div>
 
-      <!-- GRID DE AVALIAÇÕES COM ESTILO PREMIUM -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="200">
+      <!-- GRID DE AVALIAÇÕES COM ESTILO PREMIUM (stand by pelo "hidden")-->
+      <div class="hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="200">
 
         <!-- CARD 1 -->
         <div class="relative bg-white/5 backdrop-blur-md border border-yellow-500/10 rounded-3xl p-6 shadow-xl hover:scale-[1.02] hover:shadow-yellow-500/10 transition-transform duration-500 group">
@@ -404,7 +456,7 @@
           </div>
           <p class="text-gray-300 italic mb-4">"Dr. Gabriel me atendeu prontamente e me aconselhou muito bem. Recomendo o profissional."</p>
           <div class="flex text-yellow-400 text-lg gap-1">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
         </div>
 
@@ -422,7 +474,6 @@
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
         </div>
-
         <!-- CARD 3 -->
         <div class="relative bg-white/5 backdrop-blur-md border border-yellow-500/10 rounded-3xl p-6 shadow-xl hover:scale-[1.02] hover:shadow-yellow-500/10 transition-transform duration-500 group">
           <div class="flex items-center gap-4 mb-4">
@@ -438,6 +489,7 @@
           </div>
         </div>
       </div>
+
       <!-- BOTÃO CTA ATENDIMENTO 24H -->
       <div class="mt-16 text-center" data-aos="fade-up" data-aos-delay="400">
         <a href="https://wa.me/5591989664444?text=Olá,%20quero%20falar%20com%20um%20advogado%20especializado."
@@ -447,7 +499,6 @@
         <p class="text-sm text-gray-500 mt-4 italic">Atendimento exclusivo e personalizado para causas urgentes.</p>
       </div>
     </section>
-
 
 <!-- SECTION: CTA FINAL -->
 <section class="relative bg-black py-32 px-6 sm:px-12 lg:px-32 xl:px-48 overflow-hidden text-white">
