@@ -227,7 +227,7 @@ const perguntas = [
   const resultados = {
     erro_medico: {
       texto: "Você pode estar enfrentando um caso de erro médico. Temos conteúdo sobre isso.",
-      link: "/publicacoes/direitomedico/responsabilidade.html"
+      link: "/publicacoes/direitomedico/responsabilidade"
     },
     consultoria_medico: {
       texto: "Para consultoria médica preventiva, entre em contato conosco.",
@@ -239,7 +239,7 @@ const perguntas = [
     },
     pf_tributario: {
       texto: "Acesse nossos conteúdos sobre restituição, IR e planejamento fiscal pessoal.",
-      link: "/publicacoes"
+      link: "/publicacoes/"
     },
     empresa_trabalhista: {
       texto: "Nossa equipe orienta empregadores em ações preventivas e contenciosas.",
@@ -247,7 +247,7 @@ const perguntas = [
     },
     empregado_trabalhista: {
       texto: "Seus direitos podem estar sendo violados. Saiba mais aqui.",
-      link: "/publicacoes"
+      link: "/publicacoes/"
     },
     contato: {
       texto: "Fale com nosso time e receba atendimento personalizado.",
@@ -259,25 +259,25 @@ const perguntas = [
     },
     aposentadoria: {
         texto: "Acesse nossas orientações sobre aposentadoria e revisões de benefício.",
-        link: "/publicacoes/previdenciario/aposentadoria.html"
+        link: "/#contato"
       },
       auxilio_doenca: {
         texto: "Veja os direitos relacionados ao auxílio doença e como garantir o benefício.",
-        link: "/publicacoes/previdenciario/auxilio-doenca.html"
+        link: "/#contato"
       },
 
       // ========== RESPOSTAS DIREITO PENAL==========
       defesa_criminal: {
         texto: "Nossa equipe atua em plantão 24h para defesa de acusados em casos de prisão em flagrante, inquérito policial e processos criminais. Atuação estratégica desde o primeiro contato. Converse agora mesmo com um Advogado Senior para orientações",
-         link: "https://wa.me/559184435055"
+         link: "https://wa.me/5591986344794?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20sobre%20Direito%20Criminal."
       },
       familia_criminal: {
         texto: "Orientamos familiares de pessoas presas ou investigadas, com discrição, urgência e rigor jurídico.",
-         link: "https://wa.me/559184435055"
+         link: "https://wa.me/5591986344794?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20sobre%20Direito%20Criminal."
       },
       informacao_criminal: {
         texto: "Acesse conteúdos sobre direitos do acusado, defesa técnica e garantias constitucionais.",
-         link: "https://wa.me/559184435055"
+         link: "https://wa.me/5591986344794?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20sobre%20Direito%20Criminal."
       }
   };
   
