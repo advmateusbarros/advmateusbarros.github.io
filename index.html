@@ -10,14 +10,14 @@
         <!-- Define o comportamento responsivo para dispositivos móveis -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <!-- Descrição do site para motores de busca -->
-        <meta name="description" content="Souza Barros Araújo Advogados Associados: excelência jurídica, estratégia e resultados em todo o Brasil. Consultoria empresarial, compliance, contencioso e mais." />
+        <meta name="description" content="Escritório de advocacia em Belém e Ananindeua (PA), especializado em Direito Médico, Criminal e Empresarial. Atendimento em todo o Brasil. Fale com um advogado da SBA." />
         <!-- Autor do site -->
         <meta name="author" content="Souza Barros Araújo Advogados Associados" />
         <!-- Cor da barra de endereço no navegador mobile -->
         <meta name="theme-color" content="#1a202c" />
         <!-- Open Graph (para prévia em redes sociais como Facebook, WhatsApp, LinkedIn) -->
-        <meta property="og:title" content="Souza Barros Araújo Advogados Associados" />
-        <meta property="og:description" content="Escritório de Assessoria e Consultoria Jurídica full-service com estratégia e resultado em todo o Brasil." />
+        <meta property="og:title" content="Advogados em Belém (PA) — Direito Médico, Criminal e Empresarial | SBA Advogados" />
+        <meta property="og:description" content="Escritório de advocacia em Belém e Ananindeua (PA), especializado em Direito Médico, Criminal e Empresarial. Atendimento em todo o Brasil." />
         <meta property="og:image" content="https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png" />
         <meta property="og:url" content="https://souzabarrosaraujo.adv.br/" />
         <!-- Canonical -->
@@ -37,7 +37,7 @@
         <!-- Palavras-chave relacionadas ao conteúdo do site (considerado por buscadores secundários) -->
         <meta name="keywords" content="advogado em Belém, escritório de advocacia Pará, consultoria jurídica empresarial, assessoria jurídica Belém, advogados especialistas em direito empresarial, advogado para empresas em Belém, direito civil e comercial Belém, consultoria jurídica em compliance, escritório jurídico em Belém do Pará, Direito Penal, Direito Criminal, Souza Barros Araújo Advogados Associados, Mateus Barros, Nicoly Araújo, Direito Condominial, Defesa Processual, melhor escritório de advocacia, melhor advogado, advogado bom, SBA Advogados, ordem dos advogados do brasil, OAB, Advogados SBA, cadastro nacional de advogados, pesquisa de advogados">
         <!-- Título -->
-        <title>Souza Barros Araújo Advogados Associados</title>
+        <title>Advogados em Belém (PA) — Direito Médico, Criminal e Empresarial | SBA Advogados</title>
         <!-- Favicons essenciais -->
         <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="192x192" href="./src/images/favicon/favicon-192x192.png">
@@ -86,10 +86,12 @@
           "image": "https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png",
           "telephone": "+55-91-98634-4794",
           "description": "Escritório de advocacia em Belém (PA) com atuação em Direito Médico, Direito Criminal, Direito Empresarial, Trabalhista, Tributário e Previdenciário.",
-          "areaServed": {
-            "@type": "State",
-            "name": "Pará"
-          },
+          "areaServed": [
+            { "@type": "City", "name": "Belém", "containedInPlace": { "@type": "State", "name": "Pará" } },
+            { "@type": "City", "name": "Ananindeua", "containedInPlace": { "@type": "State", "name": "Pará" } },
+            { "@type": "State", "name": "Pará" },
+            { "@type": "Country", "name": "Brasil" }
+          ],
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Belém",
@@ -156,7 +158,7 @@
         
         <!-- HOME ULTRA EXECUTIVO REFINADO -->
         <section id="home" class="relative h-screen bg-center bg-cover bg-no-repeat" 
-            style="background-image: url('https://souzabarrosaraujo.adv.br/src/images/office/imagem_mesa_estante.png'); background-attachment: fixed;">
+            style="background-image: url('https://souzabarrosaraujo.adv.br/src/images/office/imagem_mesa_estante.webp'); background-attachment: fixed;">
             <!-- Camada de ofuscamento com blur e opacidade -->
             <div class="absolute inset-0 bg-black/30 backdrop-blur-sm z-0"></div>
             <!-- Sobreposição escura com degradê sofisticado -->
@@ -264,7 +266,7 @@
                 <!-- COLUNA DAS IMAGENS -->
                 <div class="space-y-10 relative z-10"  >
                     <div class="relative overflow-hidden rounded-3xl shadow-2xl border-[6px] border-[#c49b57]" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out">
-                        <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.png" alt="Mesa do Escritório de Advocacia">
+                        <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" src="src/images/office/imagem_mesa_estante.webp" alt="Mesa do Escritório de Advocacia">
                     </div>
                     <div class="relative overflow-hidden rounded-3xl shadow-2xl border-[6px] border-[#c49b57]"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-easing="ease-in-out">
                         <img class="w-full h-80 object-contain md:object-cover hover:scale-105 transition-transform duration-700" src="src/images/logo/logo_fundo_preto.jpg" alt="Logo do Escritório de Advocacia">
@@ -594,10 +596,15 @@
                             </p>
                         </div>
 
-                        <!-- Botão para acesso direto -->
-                        <a href="socios/nicolyaraujo/" class="mt-4 inline-block text-sm font-medium text-yellow-600 border border-yellow-500 px-5 py-2 rounded-full transition-all hover:bg-yellow-500 hover:text-white">
-                            Ver perfil completo
-                        </a>
+                        <!-- Botões de acesso -->
+                        <div class="mt-4 flex flex-wrap justify-center gap-2">
+                            <a href="socios/nicolyaraujo/" class="inline-block text-sm font-medium text-yellow-600 border border-yellow-500 px-5 py-2 rounded-full transition-all hover:bg-yellow-500 hover:text-white">
+                                Ver perfil completo
+                            </a>
+                            <a href="advogadaempresarial/" class="inline-block text-sm font-medium text-yellow-600 border border-yellow-500 px-5 py-2 rounded-full transition-all hover:bg-yellow-500 hover:text-white">
+                                Advocacia Empresarial
+                            </a>
+                        </div>
 
                         <!-- Redes Sociais -->
                         <ul class="flex justify-center space-x-4 mt-6">
@@ -644,8 +651,9 @@
         <div class="text-[#c4a15a] text-5xl mb-4">
           <i class="fas fa-user-md"></i>
         </div>
-        <h3 class="text-xl font-semibold text-[#1a1a1a] mb-2">Direito Médico e da Saúde</h3>
-        <p class="text-sm text-gray-600">Defesa de profissionais, instituições e pacientes em temas regulatórios e indenizatórios.</p>
+        <h3 class="text-xl font-semibold text-[#1a1a1a] mb-2"><a href="direitomedico/" class="hover:text-[#c4a15a] transition">Direito Médico e da Saúde</a></h3>
+        <p class="text-sm text-gray-600 mb-3">Defesa de profissionais, instituições e pacientes em temas regulatórios e indenizatórios.</p>
+        <a href="direitomedico/" class="mt-auto inline-block text-xs font-medium text-[#c4a15a] border border-[#c4a15a] px-4 py-1.5 rounded-full hover:bg-[#c4a15a] hover:text-white transition">Ver área →</a>
       </div>
 
       <div class="group bg-white border border-[#f0e6d2] hover:border-[#c4a15a] rounded-3xl shadow-xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:scale-[1.03]" data-aos="fade-up" data-aos-delay="200">
@@ -873,6 +881,9 @@
                         <a href="#" class="flex items-center">
                             <img src="src/images/logo/colorida_semfundo_legenda.png" class="block w-72 h-auto" alt= "Logo do Escritório Souza Barros Araújo Advogados Associados Assessoria e Consultoria Jurídica">
                         </a>
+                        <p class="mt-4 text-sm text-gray-600 max-w-xs">
+                          Escritório sediado em <strong>Belém (PA)</strong>, com atendimento em <strong>Ananindeua</strong> e região metropolitana, e atuação em processos judiciais e administrativos em todo o Brasil.
+                        </p>
                     </div>
                     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>

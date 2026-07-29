@@ -230,8 +230,8 @@ const perguntas = [
       link: "/publicacoes/direitomedico/responsabilidade"
     },
     consultoria_medico: {
-      texto: "Para consultoria médica preventiva, entre em contato conosco.",
-      link: "#contato"
+      texto: "Conheça nossa atuação em Direito Médico e da Saúde.",
+      link: "/direitomedico/"
     },
     pj_tributario: {
       texto: "Temos soluções estratégicas para empresas com desafios tributários.",

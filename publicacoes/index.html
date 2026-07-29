@@ -1,232 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
   <head>
-    <!-- Configurações básicas -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artigos Jurídicos por Área | SBA Advogados</title>
-    <meta name="description" content="Explore nossos artigos jurídicos divididos por áreas: Família, Penal, Trabalhista, Médico, Imobiliário e muito mais." />
+    <title>Publicações e Artigos Jurídicos | SBA Advogados</title>
+    <meta name="description" content="Artigos jurídicos do escritório Souza Barros Araújo Advogados sobre Direito Médico, Licitações e Contratos Administrativos, com análise técnica e orientação prática." />
     <meta name="author" content="Souza Barros Araújo Advogados Associados" />
     <meta name="robots" content="index, follow">
-    <meta property="og:image" content="https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png" />
-    <!-- LINK CANONICAL -->    
     <link rel="canonical" href="https://souzabarrosaraujo.adv.br/publicacoes/">
-    <!-- Ícone da aba -->
-    <link rel="icon" href="../src/images/favicon.ico" type="image/x-icon" />
-    <!-- Tailwind CDN (ótimo para desenvolvimento; para produção, use build com CLI ou PostCSS) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fontes personalizadas do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    <!-- Estilos personalizados do projeto -->
-    <link rel="stylesheet" href="../src/css/style.css" />
-    <!-- Ícones (Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Animações CSS (Animate.css) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- AOS (Animate On Scroll) - CSS + JS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <!-- Flowbite (componentes para Tailwind) -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <!-- Scripts do projeto (head.js e script.js) -->
-    <script src=".././src/js/head.js" defer></script>
-    <script src=".././src/js/script.js" defer></script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://souzabarrosaraujo.adv.br/publicacoes/" />
+    <meta property="og:title" content="Publicações e Artigos Jurídicos | SBA Advogados" />
+    <meta property="og:description" content="Artigos jurídicos sobre Direito Médico e Licitações, produzidos pelo escritório Souza Barros Araújo Advogados." />
+    <meta property="og:image" content="https://souzabarrosaraujo.adv.br/src/images/logo/colorida_semfundo_legenda.png" />
 
     <!-- Favicon -->
-    <link rel="icon" href=".././src/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href=".././src/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href=".././src/images/favicon/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href=".././src/images/favicon/favicon-180x180.png">
+    <link rel="icon" href="../src/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../src/images/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/images/favicon/favicon-180x180.png">
     <meta name="theme-color" content="#1a202c">
     <meta name="apple-mobile-web-app-title" content="SBA Advogados">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16995797158">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-16995797158');
-</script>
+    <!-- Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="../src/js/head.js" defer></script>
+    <script src="../src/js/script.js" defer></script>
 
+    <!-- Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16995797158"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16995797158');
+    </script>
 
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://souzabarrosaraujo.adv.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Publicações", "item": "https://souzabarrosaraujo.adv.br/publicacoes/" }
+      ]
+    }
+    </script>
 
+    <!-- Structured Data: CollectionPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://souzabarrosaraujo.adv.br/publicacoes/",
+      "name": "Publicações e Artigos Jurídicos — SBA Advogados",
+      "description": "Artigos jurídicos do escritório Souza Barros Araújo Advogados sobre Direito Médico e Licitações e Contratos Administrativos.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Souza Barros Araújo Advogados Associados",
+        "url": "https://souzabarrosaraujo.adv.br/"
+      },
+      "hasPart": [
+        {
+          "@type": "Article",
+          "headline": "Auxílio Moradia na Residência Médica: entenda seus direitos e como reivindicá-los",
+          "url": "https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/auxilio_moradia_para_medicos_residentes",
+          "about": "Direito Médico"
+        },
+        {
+          "@type": "Article",
+          "headline": "Erro Médico: quando cabe indenização?",
+          "url": "https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/responsabilidade",
+          "about": "Direito Médico"
+        },
+        {
+          "@type": "Article",
+          "headline": "Preço muito baixo na licitação: presunção absoluta ou relativa de inexequibilidade?",
+          "url": "https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/PRESUNCAO_ABSOLUTA_OU_RELATIVA_DE_INEXEQUIBILIDADE.html",
+          "about": "Licitações e Contratos Administrativos"
+        },
+        {
+          "@type": "Article",
+          "headline": "Como evitar ser desclassificado em licitações: guia estratégico sob a Lei 14.133/2021",
+          "url": "https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/como-evitar-desclassificacao-em-licitacoes.html",
+          "about": "Licitações e Contratos Administrativos"
+        }
+      ]
+    }
+    </script>
   </head>
+
   <body class="bg-white text-gray-900">
 
     <!-- SCROLL PROGRESS BAR -->
     <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent">
-        <div id="scrollProgress" class="h-full bg-yellow-500 w-0 transition-all duration-300 ease-out"></div>
+      <div id="scrollProgress" class="h-full bg-yellow-500 w-0 transition-all duration-300 ease-out"></div>
     </div>
 
-    <!-- NAVBAR PREMIUM REFINADA DE ARTIGOS -->
-    <nav class="sticky top-0 z-40 w-full bg-white border-b border-yellow-500 shadow-md transition-all duration-300">
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-40 w-full bg-white border-b border-yellow-500 shadow-md">
       <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-center md:justify-between p-4 text-center">
-        
-        <!-- LOGO -->
         <a href="https://souzabarrosaraujo.adv.br/" class="flex items-center space-x-3">
-          <img src="../src/images/logo/colorida_semfundo_legenda.png" alt="Logo do Escritório Souza Barros Araújo" class="w-56 md:w-48 h-auto">
+          <img src="../src/images/logo/colorida_semfundo_legenda.png" alt="Souza Barros Araújo Advogados" width="240" height="135" class="w-56 md:w-48 h-auto">
         </a>
-
-        <!-- BOTÕES SUPERIORES -->
         <div class="flex md:order-2 items-center space-x-2">
-          <a href="https://wa.me/5591986344794?text=Olá,%20vim%20através%20do%20Site.%20gostaria%20de%20falar%20com%20um%20especialista%20do%20escritório." class="px-5 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white font-medium transition duration-300 text-sm shadow">
-            Contatar
+          <a href="https://wa.me/5591986344794?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20falar%20com%20um%20advogado."
+             class="px-5 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white font-medium transition duration-300 text-sm shadow">
+            Fale com um advogado
           </a>
-
-          <!-- MENU MOBILE -->
           <button data-collapse-toggle="navbar-areas" type="button" class="md:hidden p-2 text-black rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-100 transition" aria-controls="navbar-areas" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
-
-        <!-- LINKS DAS ÁREAS DE ARTIGOS -->
         <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-areas">
           <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-sm font-medium">
-            <li><a href="#familia" class="nav-link">Família</a></li>
+            <li><a href="https://souzabarrosaraujo.adv.br/" class="nav-link">Início</a></li>
+            <li><a href="#direito-medico" class="nav-link">Direito Médico</a></li>
             <li><a href="#licitacoes" class="nav-link">Licitações</a></li>
-            <li><a href="#penal" class="nav-link">Penal</a></li>
-            <li><a href="#trabalhista" class="nav-link">Trabalhista</a></li>
-            <li><a href="#medico" class="nav-link">Médico</a></li>
-            <li><a href="#imobiliario" class="nav-link">Imobiliário</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- BREADCRUMB VISÍVEL -->
+    <nav aria-label="breadcrumb" class="max-w-screen-xl mx-auto px-4 pt-6 text-sm text-gray-500">
+      <ol class="flex flex-wrap items-center gap-2">
+        <li><a href="https://souzabarrosaraujo.adv.br/" class="hover:text-yellow-600">Início</a></li>
+        <li aria-hidden="true">›</li>
+        <li aria-current="page" class="text-gray-800">Publicações</li>
+      </ol>
+    </nav>
 
-      <!-- Seções de Artigos -->
-      <main class="max-w-screen-xl mx-auto px-4 py-12 space-y-16">
+    <!-- HEADER DO HUB -->
+    <header class="max-w-screen-xl mx-auto px-4 pt-6 pb-4">
+      <h1 class="text-4xl md:text-5xl font-[Playfair Display] font-extrabold text-[#1a1a1a] mb-4">
+        Publicações e Artigos Jurídicos
+      </h1>
+      <p class="text-lg text-gray-700 max-w-3xl leading-relaxed">
+        Análises e orientações elaboradas pela equipe da <strong>Souza Barros Araújo Advogados</strong>, com foco nas áreas de atuação em que o escritório tem experiência prática consolidada: Direito Médico e Licitações e Contratos Administrativos.
+      </p>
+    </header>
 
-        <!-- Direito de Família -->
-        <section id="familia">
-          <h2 class="text-3xl font-bold mb-6 text-[#b89c5a]">Direito de Família</h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Pensão Alimentícia: guia completo</h3>
-              <p class="text-gray-600 text-sm mb-2">Quando é devida, como calcular e quem pode solicitar.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Divórcio: consensual ou litigioso?</h3>
-              <p class="text-gray-600 text-sm mb-2">Diferenças, vantagens e como agir em cada caso.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-            <!-- +3 artigos simulados -->
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">União Estável: direitos e deveres</h3>
-              <p class="text-gray-600 text-sm mb-2">O que diz a lei e como garantir sua segurança jurídica.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-          </div>
-        </section>
+    <main class="max-w-screen-xl mx-auto px-4 py-8 space-y-16">
 
-        <!-- Licitações e Contratos Administrativos -->
-        <section id="licitacoes" class="mt-20">
-          <h2 class="text-3xl font-bold mb-6 text-[#b89c5a]">Licitações e Contratos Administrativos</h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- Artigo real -->
-            <a href="https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/PRESUNCAO-ABSOLUTA-OU-RELATIVA-DE-INEXEQUIBILIDADE" target="_blank" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Inexequibilidade na Nova Lei de Licitações</h3>
-              <p class="text-gray-600 text-sm mb-2">Presunção absoluta ou relativa? Saiba como se defender e qual o entendimento do TCU.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
+      <!-- DIREITO MÉDICO -->
+      <section id="direito-medico" aria-labelledby="h2-medico">
+        <div class="flex items-baseline justify-between flex-wrap gap-2 mb-2 border-b border-yellow-500/40 pb-2">
+          <h2 id="h2-medico" class="text-3xl font-bold text-[#b89c5a] font-[Playfair Display]">Direito Médico</h2>
+          <a href="https://souzabarrosaraujo.adv.br/direitomedico/auxilio_moradia_para_medicos_residentes/" class="text-sm text-gray-600 hover:text-yellow-600">
+            Ver área de atuação →
+          </a>
+        </div>
+        <p class="text-gray-600 mb-6 max-w-3xl">
+          Conteúdos voltados a médicos, residentes e instituições de saúde, com foco em responsabilidade civil médica e direitos previstos em legislação específica da residência médica.
+        </p>
 
-            <!-- Artigo futuro simulado -->
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Recursos Administrativos em Licitações</h3>
-              <p class="text-gray-600 text-sm mb-2">Entenda os prazos, fundamentos e estratégias para impugnações eficazes.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-
-            <!-- Artigo futuro simulado -->
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Sanções e Penalidades na Lei 14.133/2021</h3>
-              <p class="text-gray-600 text-sm mb-2">Quais são as consequências jurídicas e como as empresas podem se defender.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-
-          </div>
-        </section>
-
-
-        <!-- Direito Penal -->
-        <section id="penal">
-          <h2 class="text-3xl font-bold mb-6 text-[#b89c5a]">Direito Penal</h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Princípios do Direito Penal</h3>
-              <p class="text-gray-600 text-sm mb-2">Legalidade, anterioridade e outros pilares fundamentais.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Crimes contra a honra</h3>
-              <p class="text-gray-600 text-sm mb-2">Calúnia, difamação e injúria: diferenças e consequências.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-            <!-- +3 artigos simulados -->
-          </div>
-        </section>
-
-        <!-- Direito Trabalhista -->
-        <section id="trabalhista">
-          <h2 class="text-3xl font-bold mb-6 text-[#b89c5a]">Direito Trabalhista</h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Demissão por justa causa</h3>
-              <p class="text-gray-600 text-sm mb-2">Quais condutas justificam e como se defender.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
-            </a>
-            <!-- +5 artigos simulados -->
-          </div>
-        </section>
-
-        <!-- Direito Médico -->
-        <section id="medico">
-          <h2 class="text-3xl font-bold mb-6 text-[#b89c5a]">Direito Médico</h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Artigo: Responsabilidade Civil por Erro Médico -->
-            <a href="https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/responsabilidade" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2 text-gray-900">Erro Médico: Quando Cabe Indenização?</h3>
-              <p class="text-gray-600 text-sm mb-2">
-                Entenda o que caracteriza erro médico e como o paciente pode buscar indenização.
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="group h-full">
+            <a href="https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/auxilio_moradia_para_medicos_residentes"
+               class="flex flex-col h-full bg-white shadow rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:border-yellow-500 transition">
+              <span class="text-xs uppercase tracking-widest text-yellow-600 mb-2">Guia jurídico</span>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-yellow-700">
+                Auxílio Moradia na Residência Médica: entenda seus direitos e como reivindicá-los
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                Guia completo, com base na Lei 6.932/81 e na jurisprudência do STJ e STF, sobre quando o médico residente tem direito ao auxílio-moradia e como pleiteá-lo — inclusive por resíduos dos últimos anos.
               </p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
+              <span class="text-[#b89c5a] font-medium mt-auto">Ler o artigo →</span>
             </a>
-              <!-- Artigo: Auxílio Moradia para Médicos Residentes -->
-            <a href="https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/auxilio_moradia_para_medicos_residentes" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2 text-gray-900">Auxílio Moradia na Residência Médica</h3>
-              <p class="text-gray-600 text-sm mb-2">
-                Saiba como médicos residentes podem reivindicar judicialmente o direito ao auxílio moradia garantido por lei.
+          </article>
+
+          <article class="group h-full">
+            <a href="https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/responsabilidade"
+               class="flex flex-col h-full bg-white shadow rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:border-yellow-500 transition">
+              <span class="text-xs uppercase tracking-widest text-yellow-600 mb-2">Responsabilidade civil</span>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-yellow-700">
+                Erro Médico: quando cabe indenização?
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                O que caracteriza erro médico, como se configura a responsabilidade civil do profissional e da instituição de saúde, e quais os caminhos que o paciente pode adotar para buscar reparação.
               </p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
+              <span class="text-[#b89c5a] font-medium mt-auto">Ler o artigo →</span>
             </a>
+          </article>
+        </div>
+      </section>
 
+      <!-- LICITAÇÕES -->
+      <section id="licitacoes" aria-labelledby="h2-licitacoes">
+        <div class="flex items-baseline justify-between flex-wrap gap-2 mb-2 border-b border-yellow-500/40 pb-2">
+          <h2 id="h2-licitacoes" class="text-3xl font-bold text-[#b89c5a] font-[Playfair Display]">Licitações e Contratos Administrativos</h2>
+        </div>
+        <p class="text-gray-600 mb-6 max-w-3xl">
+          Análises técnicas voltadas a empresas participantes de licitações, sob a ótica da Lei 14.133/2021 e da jurisprudência do TCU.
+        </p>
 
-          </div>
-        </section>
-
-        <!-- Direito Imobiliário -->
-        <section id="imobiliario">
-          <h2 class="text-3xl font-bold mb-6 text-[#b89c5a]">Direito Imobiliário</h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="#" class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <h3 class="text-xl font-semibold mb-2">Contrato de aluguel: o que observar?</h3>
-              <p class="text-gray-600 text-sm mb-2">Cláusulas essenciais para proteger locador e locatário.</p>
-              <span class="text-[#b89c5a] font-medium">Leia mais →</span>
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="group h-full">
+            <a href="https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/PRESUNCAO_ABSOLUTA_OU_RELATIVA_DE_INEXEQUIBILIDADE.html"
+               class="flex flex-col h-full bg-white shadow rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:border-yellow-500 transition">
+              <span class="text-xs uppercase tracking-widest text-yellow-600 mb-2">Lei 14.133/2021</span>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-yellow-700">
+                Preço muito baixo na licitação: presunção absoluta ou relativa de inexequibilidade?
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                Diferença entre presunção absoluta e relativa de inexequibilidade, o entendimento consolidado pelo TCU e o passo a passo para defender uma proposta que foi desclassificada por preço.
+              </p>
+              <span class="text-[#b89c5a] font-medium mt-auto">Ler o artigo →</span>
             </a>
-          </div>
-        </section>
+          </article>
+          <article class="group h-full">
+            <a href="https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/como-evitar-desclassificacao-em-licitacoes.html"
+               class="flex flex-col h-full bg-white shadow rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:border-yellow-500 transition">
+              <span class="text-xs uppercase tracking-widest text-yellow-600 mb-2">Guia estratégico</span>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-yellow-700">
+                Como evitar ser desclassificado em licitações
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                Causas mais comuns de desclassificação, checklist antes de apresentar a proposta, defesa administrativa (diligência, recurso) e caminhos judiciais sob a Lei 14.133/2021.
+              </p>
+              <span class="text-[#b89c5a] font-medium mt-auto">Ler o artigo →</span>
+            </a>
+          </article>
+        </div>
+      </section>
 
-      </main>
+      <!-- ÁREAS DE ATUAÇÃO / LINKAGEM PARA LANDINGS COMERCIAIS -->
+      <section aria-labelledby="h2-atuacao" class="pt-4">
+        <h2 id="h2-atuacao" class="text-2xl font-bold text-[#1a1a1a] font-[Playfair Display] mb-4">
+          Áreas de atuação do escritório
+        </h2>
+        <p class="text-gray-600 mb-6 max-w-3xl">
+          As publicações refletem áreas em que a SBA Advogados atua diretamente. Para conhecer o serviço prestado em cada uma delas, acesse a página da área:
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="https://souzabarrosaraujo.adv.br/direitomedico/auxilio_moradia_para_medicos_residentes/"
+             class="block bg-[#faf7f0] border border-yellow-500/30 rounded-xl p-6 hover:shadow-md hover:border-yellow-500 transition">
+            <div class="text-yellow-600 mb-3"><i class="fas fa-stethoscope text-2xl"></i></div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Direito Médico</h3>
+            <p class="text-gray-600 text-sm">Defesa de médicos, residentes e instituições de saúde — responsabilidade civil, direitos da residência médica e consultoria regulatória.</p>
+          </a>
+          <a href="https://souzabarrosaraujo.adv.br/advogadocriminalista/"
+             class="block bg-[#faf7f0] border border-yellow-500/30 rounded-xl p-6 hover:shadow-md hover:border-yellow-500 transition">
+            <div class="text-yellow-600 mb-3"><i class="fas fa-gavel text-2xl"></i></div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Direito Criminal</h3>
+            <p class="text-gray-600 text-sm">Defesa técnica em todas as fases do processo penal, prisão em flagrante, audiência de custódia e habeas corpus.</p>
+          </a>
+          <a href="https://souzabarrosaraujo.adv.br/advogadaempresarial/"
+             class="block bg-[#faf7f0] border border-yellow-500/30 rounded-xl p-6 hover:shadow-md hover:border-yellow-500 transition">
+            <div class="text-yellow-600 mb-3"><i class="fas fa-briefcase text-2xl"></i></div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Direito Empresarial</h3>
+            <p class="text-gray-600 text-sm">Consultoria societária, compliance tributário, contratos e contencioso empresarial para empresas de todos os portes.</p>
+          </a>
+        </div>
+      </section>
 
-      
+      <!-- CTA FINAL -->
+      <section class="bg-gradient-to-br from-[#1a1a1a] to-[#2b2b2b] text-white rounded-2xl p-8 md:p-12 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold font-[Playfair Display] mb-3">Sua dúvida vai além do artigo?</h2>
+        <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+          Nossa equipe pode analisar seu caso concreto e indicar o melhor caminho jurídico. O atendimento é confidencial.
+        </p>
+        <a href="https://wa.me/5591986344794?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20falar%20com%20um%20advogado."
+           class="inline-flex items-center gap-3 bg-yellow-500 text-black font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition">
+          <i class="fab fa-whatsapp text-xl"></i> Falar com um advogado
+        </a>
+      </section>
 
+    </main>
 
+    <footer class="border-t border-gray-200 mt-16">
+      <div class="max-w-screen-xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-600">
+        <div>© Souza Barros Araújo Advogados Associados</div>
+        <div class="flex items-center gap-4">
+          <a href="https://souzabarrosaraujo.adv.br/" class="hover:text-yellow-600">Início</a>
+          <a href="https://souzabarrosaraujo.adv.br/publicacoes/" class="hover:text-yellow-600">Publicações</a>
+          <a href="https://souzabarrosaraujo.adv.br/#areas" class="hover:text-yellow-600">Áreas de atuação</a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
