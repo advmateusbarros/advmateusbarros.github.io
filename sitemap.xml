@@ -45,11 +45,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://souzabarrosaraujo.adv.br/publicacoes/direitomedico/transferencia-de-municipio-no-mais-medicos.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/PRESUNCAO_ABSOLUTA_OU_RELATIVA_DE_INEXEQUIBILIDADE.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://souzabarrosaraujo.adv.br/publicacoes/licitacoes/como-evitar-desclassificacao-em-licitacoes.html</loc>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://souzabarrosaraujo.adv.br/publicacoes/criminal/prisao-em-flagrante-primeiras-24-horas.html</loc>
+    <priority>0.7</priority>
   </url>
 </urlset>
