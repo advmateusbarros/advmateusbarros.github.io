@@ -123,9 +123,30 @@
     ]
   }
   </script>
+  <link rel="stylesheet" href="../../src/css/artigo-plus.css">
+  <script src="../../src/js/artigo-plus.js" defer></script>
 </head>
 
 <body>
+<header class="apx-header" id="apxHeader">
+  <div class="apx-bar">
+    <a class="apx-logo" href="https://souzabarrosaraujo.adv.br/#home" aria-label="Início — SBA Advogados">
+      <img src="../../src/images/novaslogos/svg/sba-horizontal-dourado.svg" alt="Souza Barros Araújo Advogados Associados" height="38">
+    </a>
+    <button class="apx-burger" id="apxBurger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="apx-menu" id="apxMenu" aria-label="Menu principal">
+      <a href="https://souzabarrosaraujo.adv.br/#home">Início</a>
+      <a href="https://souzabarrosaraujo.adv.br/#about">Sobre</a>
+      <a href="https://souzabarrosaraujo.adv.br/#services">Serviços</a>
+      <a href="https://souzabarrosaraujo.adv.br/#team">Nossa Equipe</a>
+      <a href="https://souzabarrosaraujo.adv.br/#areas">Áreas de Atuação</a>
+      <a href="https://souzabarrosaraujo.adv.br/publicacoes/">Publicações</a>
+      <a class="apx-contact" href="https://wa.me/5591986344794?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20da%20SBA."><i class="fab fa-whatsapp"></i> Contato</a>
+    </nav>
+  </div>
+  <div class="apx-progress"><span id="scrollProgress"></span></div>
+</header>
+
 
 <nav aria-label="breadcrumb" class="max-w-screen-xl mx-auto px-4 pt-4 text-sm text-gray-500">
   <ol class="flex flex-wrap items-center gap-2">
@@ -135,24 +156,6 @@
     <li aria-hidden="true">›</li>
     <li aria-current="page" class="text-gray-800">Recuperação de créditos tributários</li>
   </ol>
-</nav>
-
-<nav class="z-50 w-full bg-white border-b border-yellow-500 shadow-md mb-6">
-  <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent">
-    <div id="scrollProgress" class="h-full bg-yellow-500 w-0 transition-all duration-300 ease-out"></div>
-  </div>
-  <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="https://souzabarrosaraujo.adv.br/" class="flex items-center space-x-3" aria-label="Página inicial do escritório">
-      <img src="../../src/images/logo/colorida_semfundo_legenda.png" alt="Souza Barros Araújo Advogados" width="240" height="135" class="w-48 h-auto">
-    </a>
-    <div class="flex items-center gap-3">
-      <a href="/advogadaempresarial/" class="text-sm text-gray-700 hover:text-yellow-700 hidden md:inline">Advocacia Empresarial</a>
-      <a href="https://wa.me/5591986344794?text=Ol%C3%A1%2C%20vim%20do%20artigo%20sobre%20recupera%C3%A7%C3%A3o%20de%20cr%C3%A9ditos%20tribut%C3%A1rios%20e%20gostaria%20de%20uma%20an%C3%A1lise%20para%20minha%20empresa."
-         class="px-4 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white text-sm font-medium transition">
-        Analisar minha empresa
-      </a>
-    </div>
-  </div>
 </nav>
 
 <article class="prose lg:prose-xl mx-auto px-4">

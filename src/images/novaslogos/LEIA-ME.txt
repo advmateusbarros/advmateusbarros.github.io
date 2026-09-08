@@ -1,0 +1,39 @@
+SOUZA BARROS ARAÚJO — ADVOGADOS ASSOCIADOS
+Pacote de marca · gerado a partir do vetor mestre
+
+ESTRUTURA
+  svg/       Vetor (escala infinita). Formato mestre — use sempre que possível.
+  png/       Bitmap com fundo transparente, várias resoluções.
+  jpg/       Bitmap com fundo sólido, para plataformas sem transparência.
+  favicon/   Ícones de site e app.
+  crest-vector.svg   Símbolo isolado, vetor mestre.
+
+VERSÕES
+  simbolo      Apenas o brasão.
+  vertical     Brasão acima do nome. Uso principal.
+  horizontal   Brasão à esquerda do nome. Para cabeçalhos e assinaturas.
+  dourado      Versão preferencial, sobre fundos claros ou escuros neutros.
+  preto        Uma cor, para impressão monocromática e documentos.
+  branco       Uma cor, exclusivamente sobre fundos escuros ou imagens.
+
+CORES
+  Ouro claro    #EFDCA2
+  Ouro médio    #D6BD71
+  Ouro profundo #A8842F   (cor do nome nos lockups)
+  Grafite       #14181C   (fundo escuro institucional)
+
+TIPOGRAFIA
+  Nome desenhado em Cormorant Garamond, convertido em curvas.
+  O texto é vetor — não requer a fonte instalada.
+
+USO
+  Reserve ao redor da marca um espaço livre igual à altura do brasão dividida por 3.
+  Tamanho mínimo: símbolo 16 mm / 48 px · lockup horizontal 40 mm / 150 px.
+  Não altere proporções, cores, espaçamento entre brasão e nome, nem aplique
+  sombras, contornos ou efeitos.
+
+FAVICON — trecho para o <head>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">

@@ -139,66 +139,33 @@
   ]
 }
 </script>
+  <link rel="stylesheet" href="../../src/css/artigo-plus.css">
+  <script src="../../src/js/artigo-plus.js" defer></script>
 </head>
 
 <body>
+<header class="apx-header" id="apxHeader">
+  <div class="apx-bar">
+    <a class="apx-logo" href="https://souzabarrosaraujo.adv.br/#home" aria-label="Início — SBA Advogados">
+      <img src="../../src/images/novaslogos/svg/sba-horizontal-dourado.svg" alt="Souza Barros Araújo Advogados Associados" height="38">
+    </a>
+    <button class="apx-burger" id="apxBurger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="apx-menu" id="apxMenu" aria-label="Menu principal">
+      <a href="https://souzabarrosaraujo.adv.br/#home">Início</a>
+      <a href="https://souzabarrosaraujo.adv.br/#about">Sobre</a>
+      <a href="https://souzabarrosaraujo.adv.br/#services">Serviços</a>
+      <a href="https://souzabarrosaraujo.adv.br/#team">Nossa Equipe</a>
+      <a href="https://souzabarrosaraujo.adv.br/#areas">Áreas de Atuação</a>
+      <a href="https://souzabarrosaraujo.adv.br/publicacoes/">Publicações</a>
+      <a class="apx-contact" href="https://wa.me/5591986344794?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20da%20SBA."><i class="fab fa-whatsapp"></i> Contato</a>
+    </nav>
+  </div>
+  <div class="apx-progress"><span id="scrollProgress"></span></div>
+</header>
+
 <nav aria-label="breadcrumb" class="max-w-screen-xl mx-auto px-4 pt-4 text-sm text-gray-500"><ol class="flex flex-wrap items-center gap-2"><li><a href="/" class="hover:text-yellow-600">Início</a></li><li aria-hidden="true">›</li><li><a href="/direitomedico/" class="hover:text-yellow-600">Direito Médico</a></li><li aria-hidden="true">›</li><li aria-current="page" class="text-gray-800">Auxílio-Moradia (artigo)</li></ol></nav>
     <!-- NAVBAR PARA ARTIGOS -->
-    <nav class="z-50 w-full bg-white border-b border-yellow-500 shadow-md mb-10">
-
-    <!-- Scroll progress bar -->
-    <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent">
-        <div id="scrollProgress" class="h-full bg-yellow-500 w-0 transition-all duration-300 ease-out"></div>
-    </div>
-
-    <!-- Container principal -->
-    <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
-
-        <!-- Logo -->
-        <a href="https://souzabarrosaraujo.adv.br" class="flex items-center space-x-3" aria-label="Página inicial do escritório">
-        <img src="../../src/images/logo/colorida_semfundo_legenda.png" alt="Logo Souza Barros Araújo" class="w-44 md:w-48 h-auto">
-        </a>
-
-        <!-- Menu desktop completo -->
-        <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
-        <a href="https://souzabarrosaraujo.adv.br" class="hover:text-yellow-600 transition">Página Inicial</a>
-        <a href="https://souzabarrosaraujo.adv.br/publicacoes/" class="hover:text-yellow-600 transition">Publicações</a>
-        <a href="https://souzabarrosaraujo.adv.br/#about" class="hover:text-yellow-600 transition">Sobre</a>
-        <a href="https://souzabarrosaraujo.adv.br/#services" class="hover:text-yellow-600 transition">Serviços</a>
-        <a href="https://souzabarrosaraujo.adv.br/#team" class="hover:text-yellow-600 transition">Nossa Equipe</a>
-        <a href="https://souzabarrosaraujo.adv.br/#areas" class="hover:text-yellow-600 transition">Área de Atuação</a>
-        <a href="https://souzabarrosaraujo.adv.br/#depoimentos" class="hover:text-yellow-600 transition">Depoimentos</a>
-        <a href="https://wa.me/5591986344794?text=Olá,%20vim%20através%20de%20um%20artigo%20publicado%20no%20site.%20Gostaria%20de%20falar%20com%20o%20Advogado%20Especialista." 
-            class="px-4 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white transition shadow text-sm">
-            Fale com um Advogado
-        </a>
-        </div>
-
-        <!-- Botão do menu mobile -->
-        <div class="md:hidden">
-        <button id="mobileMenuToggle" type="button" class="p-2 text-black rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-100 transition" aria-label="Abrir menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-        </div>
-    </div>
-
-    <!-- Menu mobile completo -->
-    <div class="hidden md:hidden px-4 pb-4" id="navbar-article">
-        <ul class="flex flex-col space-y-2 text-sm font-medium">
-        <li><a href="https://souzabarrosaraujo.adv.br/" class="block hover:text-yellow-600 transition">Página Inicial</a></li>
-        <li><a href="https://souzabarrosaraujo.adv.br/publicacoes/" class="block hover:text-yellow-600 transition">Publicações</a></li>
-        <li><a href="https://souzabarrosaraujo.adv.br/#about" class="block hover:text-yellow-600 transition">Sobre</a></li>
-        <li><a href="https://souzabarrosaraujo.adv.br/#services" class="block hover:text-yellow-600 transition">Serviços</a></li>
-        <li><a href="https://souzabarrosaraujo.adv.br/#team" class="block hover:text-yellow-600 transition">Nossa Equipe</a></li>
-        <li><a href="https://souzabarrosaraujo.adv.br/#areas" class="block hover:text-yellow-600 transition">Área de Atuação</a></li>
-        <li><a href="https://souzabarrosaraujo.adv.br/#depoimentos" class="block hover:text-yellow-600 transition">Depoimentos</a></li>
-        <li><a href="https://wa.me/5591986344794?text=Olá,%20vim%20através%20de%20um%20artigo%20do%20site.%20Gostaria%20de%20falar%20com%20o%20Advogado%20Especialista." class="block px-4 py-2 rounded-full border border-yellow-500 text-black hover:bg-yellow-500 hover:text-white transition text-center">Fale com um Advogado</a></li>
-        </ul>
-    </div>
-    </nav>
-  <!-- ARTIGO COMPLETO -->
+    <!-- ARTIGO COMPLETO -->
   <article class="prose lg:prose-xl mx-auto px-4">
     <!-- CABEÇALHO DO ARTIGO -->
     <header class="text-center">

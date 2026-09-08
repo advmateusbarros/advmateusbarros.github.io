@@ -1,0 +1,128 @@
+/* ============================================================
+   artigo-plus.css — cabeçalho rico + laterais + FAQ/CTA
+   Escopo: páginas de artigo (publicações). Prefixo .apx-
+   Marca: grafite #14181C / ouro #EFDCA2 #D6BD71 #A8842F
+   ============================================================ */
+
+:root{
+  --apx-graphite:#14181C;
+  --apx-graphite-2:#1d2329;
+  --apx-gold-light:#EFDCA2;
+  --apx-gold:#D6BD71;
+  --apx-gold-deep:#A8842F;
+}
+
+/* ---------- HEADER FIXO ---------- */
+.apx-header{
+  position:sticky; top:0; z-index:60;
+  background-color:#14181C;
+  background:linear-gradient(180deg,#14181C, #171c21);
+  border-bottom:1px solid rgba(214,189,113,.28);
+  box-shadow:0 6px 24px -14px rgba(0,0,0,.7);
+}
+.apx-progress{position:absolute; left:0; bottom:-1px; width:100%; height:3px; background:rgba(255,255,255,.06)}
+.apx-progress > #scrollProgress{display:block; height:100%; width:0;
+  background:linear-gradient(90deg,var(--apx-gold-deep),var(--apx-gold),var(--apx-gold-light));
+  transition:width .15s ease-out}
+.apx-bar{max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; justify-content:space-between; gap:18px}
+.apx-logo{display:inline-flex; align-items:center; flex:0 0 auto}
+.apx-logo img{height:38px; width:auto; display:block; transition:transform .3s ease, filter .3s ease}
+.apx-logo:hover img{transform:scale(1.04)}
+
+.apx-menu{display:flex; align-items:center; gap:6px}
+.apx-menu a{
+  position:relative; color:var(--apx-gold-light); text-decoration:none;
+  font:600 .92rem/1 'Inter',system-ui,sans-serif; letter-spacing:.01em;
+  padding:10px 12px; border-radius:8px; white-space:nowrap;
+  transition:color .2s ease, background .2s ease}
+.apx-menu a::after{content:""; position:absolute; left:12px; right:12px; bottom:5px; height:2px;
+  background:linear-gradient(90deg,var(--apx-gold),var(--apx-gold-light));
+  transform:scaleX(0); transform-origin:left; transition:transform .28s ease}
+.apx-menu a:hover{color:#fff}
+.apx-menu a:hover::after{transform:scaleX(1)}
+.apx-menu a.apx-contact{
+  background:linear-gradient(90deg,var(--apx-gold-deep),var(--apx-gold));
+  color:#14181C; margin-left:6px; box-shadow:0 8px 22px -12px rgba(214,189,113,.9)}
+.apx-menu a.apx-contact::after{display:none}
+.apx-menu a.apx-contact:hover{filter:brightness(1.06); transform:translateY(-1px)}
+
+.apx-burger{display:none; width:44px; height:40px; border:1px solid rgba(214,189,113,.4);
+  background:transparent; border-radius:9px; cursor:pointer; padding:9px 10px}
+.apx-burger span{display:block; height:2px; background:var(--apx-gold-light); border-radius:2px;
+  transition:transform .3s ease, opacity .2s ease}
+.apx-burger span+span{margin-top:5px}
+.apx-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.apx-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.apx-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+@media (max-width:1024px){
+  .apx-burger{display:block}
+  .apx-menu{position:fixed; top:59px; left:0; right:0; flex-direction:column; align-items:stretch;
+    gap:2px; background:#14181C; border-bottom:1px solid rgba(214,189,113,.28);
+    padding:10px 16px 16px; transform:translateY(-12px); opacity:0; pointer-events:none;
+    transition:transform .28s ease, opacity .28s ease; max-height:calc(100vh - 59px); overflow:auto}
+  .apx-menu.is-open{transform:none; opacity:1; pointer-events:auto}
+  .apx-menu a{padding:13px 12px; font-size:1rem}
+  .apx-menu a::after{display:none}
+  .apx-menu a.apx-contact{margin:8px 0 0; text-align:center; justify-content:center}
+}
+
+/* ---------- BREADCRUMB ---------- */
+nav[aria-label="breadcrumb"]{max-width:1180px; margin:16px auto 0; padding:0 20px}
+nav[aria-label="breadcrumb"] ol{display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  list-style:none; margin:0; padding:0; font-size:.82rem; color:#8a8a8a}
+nav[aria-label="breadcrumb"] a{color:#8a8a8a; text-decoration:none; transition:color .2s}
+nav[aria-label="breadcrumb"] a:hover{color:var(--apx-gold-deep)}
+nav[aria-label="breadcrumb"] [aria-current="page"]{color:#2b2b2b; font-weight:600}
+
+/* âncoras não ficam escondidas sob o header fixo */
+article [id], section[id]{scroll-margin-top:86px}
+
+/* ---------- ÍNDICE FLUTUANTE (laterais) ---------- */
+.apx-toc{position:fixed; top:120px; left:max(16px,calc(50% - 760px)); width:210px; z-index:40;
+  max-height:calc(100vh - 160px); overflow:auto; padding:16px 14px;
+  background:#fff; border:1px solid #eee; border-radius:14px;
+  box-shadow:0 20px 40px -30px rgba(0,0,0,.35);
+  opacity:0; transform:translateX(-8px); transition:opacity .4s ease, transform .4s ease}
+.apx-toc.is-ready{opacity:1; transform:none}
+.apx-toc .apx-toc-title{font:700 .68rem/1 'Inter',sans-serif; letter-spacing:.16em;
+  text-transform:uppercase; color:#9a7b34; margin:0 0 10px}
+.apx-toc a{display:block; color:#555; text-decoration:none; font-size:.84rem; line-height:1.35;
+  padding:6px 10px; border-left:2px solid transparent; border-radius:0 6px 6px 0; transition:.2s}
+.apx-toc a:hover{color:#14181C; background:#faf7f0}
+.apx-toc a.is-active{color:var(--apx-gold-deep); border-left-color:var(--apx-gold);
+  background:#faf7f0; font-weight:600}
+/* só mostra onde há espaço lateral */
+@media (max-width:1359px){.apx-toc{display:none}}
+
+/* ---------- BOTÕES FLUTUANTES ---------- */
+.apx-fabs{position:fixed; right:18px; bottom:18px; z-index:65; display:flex; flex-direction:column; gap:12px}
+.apx-fab{display:inline-flex; align-items:center; gap:10px; border:none; cursor:pointer;
+  text-decoration:none; border-radius:999px; font:700 .92rem/1 'Inter',sans-serif;
+  box-shadow:0 14px 30px -12px rgba(0,0,0,.5); transition:transform .25s ease, opacity .25s ease}
+.apx-fab-wa{background:#25D366; color:#fff; padding:13px 16px}
+.apx-fab-wa .apx-lbl{max-width:0; overflow:hidden; white-space:nowrap; transition:max-width .4s ease}
+.apx-fab-wa:hover .apx-lbl{max-width:230px}
+.apx-fab-wa:hover{transform:translateY(-3px) scale(1.03)}
+.apx-fab-top{width:46px; height:46px; justify-content:center; background:#14181C; color:var(--apx-gold-light);
+  border:1px solid rgba(214,189,113,.4); opacity:0; pointer-events:none}
+.apx-fab-top.is-show{opacity:1; pointer-events:auto}
+.apx-fab-top:hover{transform:translateY(-3px); background:#1d2329}
+@media (max-width:640px){.apx-fab-wa .apx-lbl{display:none}}
+
+/* ---------- FAQ (article details) mais interativo ---------- */
+article details{transition:border-color .25s ease, box-shadow .25s ease, transform .2s ease}
+article details:hover{box-shadow:0 16px 34px -30px rgba(0,0,0,.45)}
+article details[open]{box-shadow:0 18px 36px -28px rgba(168,132,47,.4)}
+article details > summary{transition:color .2s ease}
+article details > summary:hover{color:var(--apx-gold-deep)}
+article details[open] > p, article details[open] > div{animation:apxFade .35s ease}
+@keyframes apxFade{from{opacity:0; transform:translateY(-4px)} to{opacity:1; transform:none}}
+
+/* ---------- realces gerais ---------- */
+article a{transition:color .2s ease}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important}
+  .apx-menu, .apx-toc, .apx-fab{transition:none}
+}
